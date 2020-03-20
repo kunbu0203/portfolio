@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900");
+* {
+  font-family: 'Noto Sans TC', sans-serif; }
+
+img {
+  width: 100%;
+  vertical-align: top; }
+
+a {
+  text-decoration: none; }
