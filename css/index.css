@@ -115,7 +115,7 @@ article section.banner {
             background-color: #f4f4f4;
             border: 5px solid #321f1f;
             border-radius: 5px;
-            background-image: url(/images/background.png);
+            background-image: url(./images/background.png);
             background-size: 20%;
             background-repeat: repeat;
             position: absolute;
