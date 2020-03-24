@@ -9,36 +9,40 @@ article
         position: relative
         overflow: hidden
         .wrapper
-            
             +wrapperStyle
             +pstc5
             .main
                 width: 100%
-                max-width: 125vh
+                max-width: 115vh
                 position: relative
                 margin: auto
-                h1
-                    font-size: 52px
+                margin-top: 5%
+                .console-container
+                    font-size: 46px
+                    color: $brown
+                    // display: block
                     position: absolute
-                    top: 0
+                    top: -12%
                     left: 0
+                .console-underscore
+                    display: inline-block
                 .bigCloud,.mountainCow,.mountainCableCar
                     width: 50%
-                    transform: skewY(-27deg)
+                    transform: skewY(-26.5deg)
                     transform-origin: left
                     position: absolute
                     top: 8%
                     left: 0
                 .buildings,.one0one,.grove
                     width: 50%
-                    transform: skewY(27deg)
+                    transform: skewY(26.5deg)
                     transform-origin: right
                     position: absolute
                     top: 8%
                     right: 0
                 .floorBottom01
-                    width: 67%
-                    padding-bottom: 67%
+                    width: 68%
+                    padding-bottom: 68%
                     position: absolute
                     bottom: -8%
                     left: 50%
@@ -57,9 +61,10 @@ article
                     bottom: -4%
                 .item
                     position: relative
+                    // padding-top: 10%
                     .floor
-                        width: 67%
-                        padding-bottom: 67%
+                        width: 68%
+                        padding-bottom: 68%
                         position: relative
                         transform: scaleY(0.5)
                         transform-origin: bottom

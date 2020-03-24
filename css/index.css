@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap");
 * {
-  font-family: 'Noto Sans TC', sans-serif; }
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700; }
 
 img {
   width: 100%;
@@ -33,19 +34,23 @@ article section.banner {
     transform: translate(-50%, -50%); }
     article section.banner .wrapper .main {
       width: 100%;
-      max-width: 125vh;
+      max-width: 115vh;
       position: relative;
-      margin: auto; }
-      article section.banner .wrapper .main h1 {
-        font-size: 52px;
+      margin: auto;
+      margin-top: 5%; }
+      article section.banner .wrapper .main .console-container {
+        font-size: 46px;
+        color: #321f1f;
         position: absolute;
-        top: 0;
+        top: -12%;
         left: 0; }
+      article section.banner .wrapper .main .console-underscore {
+        display: inline-block; }
       article section.banner .wrapper .main .bigCloud, article section.banner .wrapper .main .mountainCow, article section.banner .wrapper .main .mountainCableCar {
         width: 50%;
-        -webkit-transform: skewY(-27deg);
-        -ms-transform: skewY(-27deg);
-        transform: skewY(-27deg);
+        -webkit-transform: skewY(-26.5deg);
+        -ms-transform: skewY(-26.5deg);
+        transform: skewY(-26.5deg);
         -webkit-transform-origin: left;
         -ms-transform-origin: left;
         transform-origin: left;
@@ -54,9 +59,9 @@ article section.banner {
         left: 0; }
       article section.banner .wrapper .main .buildings, article section.banner .wrapper .main .one0one, article section.banner .wrapper .main .grove {
         width: 50%;
-        -webkit-transform: skewY(27deg);
-        -ms-transform: skewY(27deg);
-        transform: skewY(27deg);
+        -webkit-transform: skewY(26.5deg);
+        -ms-transform: skewY(26.5deg);
+        transform: skewY(26.5deg);
         -webkit-transform-origin: right;
         -ms-transform-origin: right;
         transform-origin: right;
@@ -64,8 +69,8 @@ article section.banner {
         top: 8%;
         right: 0; }
       article section.banner .wrapper .main .floorBottom01, article section.banner .wrapper .main .floorBottom02 {
-        width: 67%;
-        padding-bottom: 67%;
+        width: 68%;
+        padding-bottom: 68%;
         position: absolute;
         bottom: -8%;
         left: 50%;
@@ -92,8 +97,8 @@ article section.banner {
       article section.banner .wrapper .main .item {
         position: relative; }
         article section.banner .wrapper .main .item .floor {
-          width: 67%;
-          padding-bottom: 67%;
+          width: 68%;
+          padding-bottom: 68%;
           position: relative;
           -webkit-transform: scaleY(0.5);
           -ms-transform: scaleY(0.5);
