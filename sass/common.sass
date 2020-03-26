@@ -1,22 +1,21 @@
 @charset "utf-8"
 @import "var.sass"
 
-article
-	// width: 100%
-	// // min-height: calc(100vh - 65px)
-	// // height: calc(var(--vh, 1vh) * 100)
-	// min-height: 100vh
-	// background-image: url(/assets/images/bg_grid.png)
-	// position: relative
-	// // +rwdh(900px)
-	// // 	min-height: 150vh
-	// +rwd(768px)
-	// 	min-height: auto
-
-header
+.menu
+	width: 55%
+	padding-bottom: 55%
+	+pstc0
+	transform: rotateX(180deg)
+	transform-origin: bottom
+	// margin: auto
+	backface-visibility: hidden
+	transition: .5s
+	+before
+		width: 100%
+		height: 100%
+		background-color: $floor
+		border: 5px solid $brown
+		border-radius: 5px
+		position: absolute
+		transform: rotate(45deg)
 	
-
-
-
-
-footer

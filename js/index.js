@@ -1,3 +1,5 @@
+
+
 // function([string1, string2],target id,[color1,color2])    
 consoleText([' Pon!', ' a Front-end Engineer.'], 'text');
 
@@ -44,3 +46,4 @@ function consoleText(words, id) {
         }
     }, 400)
 }
+

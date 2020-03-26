@@ -39,6 +39,18 @@ html(lang="zh-Hant")
 						.floorBottom02
 						.item
 							.floor
+							.cars.left
+								figure
+									img(src="./images/carBlue.png", alt="")
+							.tree.left
+								figure
+									img(src="./images/tree.png", alt="")
+							.tree.right
+								figure
+									img(src="./images/tree.png", alt="")
+							.cars.right
+								figure
+									img(src="./images/carRed.png", alt="")
 							.me
 								figure
 									img(src="./images/me.png", alt="")
@@ -49,6 +61,7 @@ html(lang="zh-Hant")
 										.line
 										.line
 									p MENU
+							include ./includes/menu.pug
         
 		include ./includes/footer.pug
 		//- include ./includes/js_include.pug
@@ -60,4 +73,5 @@ html(lang="zh-Hant")
 		//- script(src="/assets/js/libs/jquery.twzipcode.min.js")
 		//- script(src="/assets/js/index.js")
 		script(src="./js/index.js")
+		script(src="./js/menu.js")
 		//- script(src="/assets/js/product.js")
