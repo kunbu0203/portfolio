@@ -26,9 +26,9 @@ a {
   transform-origin: bottom;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s; }
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out; }
   .menu:before {
     content: "";
     display: block;
