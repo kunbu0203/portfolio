@@ -17,24 +17,27 @@
         border-radius: 1px
 
 .menu
-	width: calc((850 / 1240) * 100%)
-	padding-bottom: calc((850 / 1240) * 100%)
-	+pstc0
-	transform: rotateX(180deg)
-	transform-origin: bottom
-	// margin: auto
-	backface-visibility: hidden
-	transition: .7s ease-in-out 
+    width: calc((850 / 1240) * 100%)
+    padding-bottom: calc((850 / 1240) * 100%)
+    +pstc0
+    transform: rotateX(180deg)
+    transform-origin: bottom
+    // margin: auto
+    backface-visibility: hidden
+    transition: .7s ease-in-out 
     z-index: 10
-	+before
-		width: 100%
-		height: 100%
-		background-color: $floor
-		border: 5px solid $brown
-		border-radius: 5px
-		position: absolute
-		transform: rotate(45deg)
-		box-sizing: border-box
+    +before
+        width: 100%
+        height: 100%
+        background-color: $floor
+        border: 5px solid $brown
+        border-radius: 5px
+        position: absolute
+        transform: rotate(45deg)
+        box-sizing: border-box
+    .wrapperMenu
+        opacity: 0
+        transition: .7s ease-in-out 
 
 a.menuBtn
     width: 240px
@@ -43,6 +46,7 @@ a.menuBtn
     bottom: 6%
     left: 50%
     transform: translateX(-50%)
+    transition: .7s ease-in-out 
     +before
         width: 100%
         height: 100%

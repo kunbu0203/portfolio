@@ -273,6 +273,10 @@ article section.banner {
       article section.banner .wrapper .main.menuOpen .floor {
         -webkit-transform: scaleY(0.5) rotateX(180deg);
         transform: scaleY(0.5) rotateX(180deg); }
+      article section.banner .wrapper .main.menuOpen .menuBtn.open {
+        opacity: 0; }
       article section.banner .wrapper .main.menuOpen .menu {
         -webkit-transform: scaleY(1) rotateX(360deg);
         transform: scaleY(1) rotateX(360deg); }
+        article section.banner .wrapper .main.menuOpen .menu .wrapperMenu {
+          opacity: 1; }
