@@ -1,0 +1,22 @@
+@charset "utf-8"
+@import "var.sass"
+
+.menu
+	width: calc((600 / 1100) * 100%)
+	padding-bottom: calc((600 / 1100) * 100%)
+	+pstc0
+	transform: rotateX(180deg)
+	transform-origin: bottom
+	// margin: auto
+	backface-visibility: hidden
+	transition: .5s ease-in-out 
+	z-index: 48
+	+before
+		width: 100%
+		height: 100%
+		background-color: $floor
+		border: 5px solid $brown
+		border-radius: 5px
+		position: absolute
+		transform: rotate(45deg)
+		box-sizing: border-box

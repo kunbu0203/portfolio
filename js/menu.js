@@ -1,9 +1,22 @@
+// $(document).ready(function () {
+//     $('.menuBtn').click(function (e) { 
+//         e.preventDefault();
+//         $('.main').toggleClass('itemHide');
+//         $('.main').toggleClass('menuOpen');
+//     });
+// });
+
 $(document).ready(function () {
-    $('.menuBtn').click(function (e) { 
+    $('.open').click(function (e) { 
         e.preventDefault();
-        $('.main').toggleClass('itemHide');
-        $('.main').toggleClass('menuOpen');
+        $(".main").addClass("itemHide").delay(500).queue(function(){
+            $(this).addClass("menuOpen").dequeue();
+        });
+    });
+    $('.close').click(function (e) { 
+        e.preventDefault();
+        $(".main").removeClass("menuOpen").delay(700).queue(function(){
+            $(this).removeClass("itemHide").dequeue();
+        });
     });
 });
-
-

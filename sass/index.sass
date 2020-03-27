@@ -29,7 +29,7 @@ article
                 max-width: 125vh
                 position: relative
                 margin: auto
-                transition: .5s ease-in-out
+                transition: .7s ease-in-out
                 .console-container
                     font-size: 52px
                     color: $brown
@@ -43,18 +43,18 @@ article
                     transform: skewY(-26.5deg)
                     transform-origin: left
                     position: absolute
-                    top: 8%
+                    top: 9%
                     left: 0
                 .buildings,.one0one,.grove
                     width: 50%
                     transform: skewY(26.5deg)
                     transform-origin: right
                     position: absolute
-                    top: 8%
+                    top: 9%
                     right: 0
                 .floorBottom01
-                    width: 68%
-                    padding-bottom: 68%
+                    width: calc((850 / 1240) * 100%)
+                    padding-bottom: calc((850 / 1240) * 100%)
                     position: absolute
                     bottom: -8%
                     left: 50%
@@ -68,6 +68,7 @@ article
                         background-color: #c6c1bd
                         position: absolute
                         transform: rotate(45deg)
+                        box-sizing: border-box
                 .floorBottom02
                     @extend .floorBottom01
                     bottom: -4%
@@ -76,14 +77,14 @@ article
                 .item
                     position: relative
                     .floor
-                        width: 68%
-                        padding-bottom: 68%
+                        width: calc((850 / 1240) * 100%)
+                        padding-bottom: calc((850 / 1240) * 100%)
                         position: relative
                         transform: scaleY(0.5) rotateX(0deg)
                         transform-origin: bottom
                         margin: auto
                         backface-visibility: hidden
-                        transition: .5s ease-in-out
+                        transition: .7s ease-in-out
                         +before
                             width: 100%
                             height: 100%
@@ -95,11 +96,12 @@ article
                             background-repeat: repeat
                             position: absolute
                             transform: rotate(45deg)
+                            box-sizing: border-box
                     .cars
-                        width: calc((80 / 1100) * 100%)
+                        width: calc((90 / 1240) * 100%)
                         position: absolute
                     .tree
-                        width: calc((50 / 1100) * 100%)
+                        width: calc((60 / 1240) * 100%)
                         position: absolute
                     .left
                         transform: skewY(-26.5deg)
@@ -125,64 +127,11 @@ article
                         figure
                             +animation(drive 5.5s -1s infinite linear)
                     .me
-                        width: calc((300 / 1100) * 100%)
+                        width: calc((360 / 1240) * 100%)
                         position: absolute
                         top: 2%
                         left: 50%
                         transform: translateX(-50%)
-                    a.menuBtn
-                        width: 240px
-                        display: block
-                        position: absolute
-                        bottom: 5%
-                        left: 50%
-                        transform: translateX(-50%)
-                        z-index: 99
-                        +before
-                            width: 100%
-                            height: 100%
-                            background-color: #99443d
-                            border: 3px solid $brown
-                            border-radius: 38px
-                            box-sizing: border-box
-                            position: absolute
-                            top: 10px
-                            left: 0
-                        .box
-                            text-align: center
-                            background-color: $pink
-                            border: 3px solid $brown
-                            border-radius: 38px
-                            position: relative
-                            transition: .3s
-                            .ham
-                                width: 25px
-                                height: 25px
-                                position: relative
-                                display: inline-block
-                                margin-right: 5px
-                                // transition: .5s
-                                .line
-                                    width: 100%
-                                    height: 4px
-                                    border-radius: 2px
-                                    background-color: #fff
-                                    transition: .5s
-                                    +pstc0
-                                    &:nth-of-type(1)
-                                        transform: translateY(-10px)
-                                    &:nth-of-type(3)
-                                        transform: translateY(10px)
-                            p
-                                font-size: 34px
-                                line-height: 66px
-                                color: #fff
-                                display: inline-block
-                            p.close
-                                display: none
-                        &:hover
-                            .box
-                                transform: translateY(10px)
             +rwd(2400px)
                 max-width: 1140px
                 .main
@@ -191,79 +140,18 @@ article
                     .console-container
                         font-size: 46px
                         top: -15%
-                    .item
-                        a.menuBtn
-                            width: 200px
-                            +before
-                                border-radius: 31px
-                                top: 7px
-                            .box
-                                .ham
-                                    width: 22px
-                                    height: 22px
-                                    border-radius: 31px
-                                    .line
-                                        height: 3px
-                                        border-radius: 1.5px
-                                        &:nth-of-type(1)
-                                            transform: translateY(-8px)
-                                        &:nth-of-type(3)
-                                            transform: translateY(8px)
-                                p
-                                    font-size: 28px
-                                    line-height: 56px
-                            &:hover
-                                .box
-                                    transform: translateY(7px)
             +rwd(1400px)
                 .main
                     margin-top: 7%
                     .console-container
                         font-size: 36px
-                    .item
-                        a.menuBtn
-                            width: 150px
-                            +before
-                                border-radius: 23px
-                            .box
-                                .ham
-                                    width: 15px
-                                    height: 15px
-                                    border-radius: 23px
-                                    margin-right: 3px
-                                    .line
-                                        height: 2px
-                                        border-radius: 1px
-                                        &:nth-of-type(1)
-                                            transform: translateY(-6px)
-                                        &:nth-of-type(3)
-                                            transform: translateY(6px)
-                                p
-                                    font-size: 22px
-                                    line-height: 40px
             .main.itemHide
                 .console-container,.bigCloud,.mountainCow,.mountainCableCar,.buildings,.one0one,.grove,.floorBottom01,.floorBottom02,.cars,.tree,.me
                     opacity: 0
             .main.menuOpen
                 margin-top: 0
                 .floor
-                    padding-bottom: 55%
+                    // padding-bottom: calc((600 / 1240) * 100%)
                     transform: scaleY(0.5) rotateX(180deg)
-                a.menuBtn
-                    .box
-                        .ham
-                            margin-bottom: -1px
-                            .line
-                                width: 120%
-                                &:nth-of-type(1)
-                                    transform: rotate(45deg)
-                                &:nth-of-type(2)
-                                    width: 0
-                                &:nth-of-type(3)
-                                    transform: rotate(-45deg)
-                        p.open
-                            display: none
-                        p.close
-                            display: inline-block
                 .menu
                     transform: scaleY(1) rotateX(360deg)

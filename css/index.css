@@ -100,9 +100,9 @@ article section.banner {
       max-width: 125vh;
       position: relative;
       margin: auto;
-      -webkit-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out; }
+      -webkit-transition: .7s ease-in-out;
+      -o-transition: .7s ease-in-out;
+      transition: .7s ease-in-out; }
       article section.banner .wrapper .main .console-container {
         font-size: 52px;
         color: #321f1f;
@@ -120,7 +120,7 @@ article section.banner {
         -ms-transform-origin: left;
         transform-origin: left;
         position: absolute;
-        top: 8%;
+        top: 9%;
         left: 0; }
       article section.banner .wrapper .main .buildings, article section.banner .wrapper .main .one0one, article section.banner .wrapper .main .grove {
         width: 50%;
@@ -131,11 +131,11 @@ article section.banner {
         -ms-transform-origin: right;
         transform-origin: right;
         position: absolute;
-        top: 8%;
+        top: 9%;
         right: 0; }
       article section.banner .wrapper .main .floorBottom01, article section.banner .wrapper .main .floorBottom02 {
-        width: 68%;
-        padding-bottom: 68%;
+        width: calc((850 / 1240) * 100%);
+        padding-bottom: calc((850 / 1240) * 100%);
         position: absolute;
         bottom: -8%;
         left: 50%;
@@ -156,7 +156,9 @@ article section.banner {
           position: absolute;
           -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
+          transform: rotate(45deg);
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
       article section.banner .wrapper .main .floorBottom02 {
         bottom: -4%; }
       article section.banner .wrapper .main .console-container, article section.banner .wrapper .main .bigCloud, article section.banner .wrapper .main .mountainCow, article section.banner .wrapper .main .mountainCableCar, article section.banner .wrapper .main .buildings, article section.banner .wrapper .main .one0one, article section.banner .wrapper .main .grove, article section.banner .wrapper .main .floorBottom01, article section.banner .wrapper .main .floorBottom02, article section.banner .wrapper .main .floorBottom02, article section.banner .wrapper .main .cars, article section.banner .wrapper .main .tree, article section.banner .wrapper .main .me {
@@ -166,8 +168,8 @@ article section.banner {
       article section.banner .wrapper .main .item {
         position: relative; }
         article section.banner .wrapper .main .item .floor {
-          width: 68%;
-          padding-bottom: 68%;
+          width: calc((850 / 1240) * 100%);
+          padding-bottom: calc((850 / 1240) * 100%);
           position: relative;
           -webkit-transform: scaleY(0.5) rotateX(0deg);
           transform: scaleY(0.5) rotateX(0deg);
@@ -177,9 +179,9 @@ article section.banner {
           margin: auto;
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-          -webkit-transition: .5s ease-in-out;
-          -o-transition: .5s ease-in-out;
-          transition: .5s ease-in-out; }
+          -webkit-transition: .7s ease-in-out;
+          -o-transition: .7s ease-in-out;
+          transition: .7s ease-in-out; }
           article section.banner .wrapper .main .item .floor:before {
             content: "";
             display: block;
@@ -194,12 +196,14 @@ article section.banner {
             position: absolute;
             -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
-            transform: rotate(45deg); }
+            transform: rotate(45deg);
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
         article section.banner .wrapper .main .item .cars {
-          width: calc((80 / 1100) * 100%);
+          width: calc((90 / 1240) * 100%);
           position: absolute; }
         article section.banner .wrapper .main .item .tree {
-          width: calc((50 / 1100) * 100%);
+          width: calc((60 / 1240) * 100%);
           position: absolute; }
         article section.banner .wrapper .main .item .left {
           -webkit-transform: skewY(-26.5deg);
@@ -241,84 +245,13 @@ article section.banner {
             -o-animation: drive 5.5s -1s infinite linear;
             animation: drive 5.5s -1s infinite linear; }
         article section.banner .wrapper .main .item .me {
-          width: calc((300 / 1100) * 100%);
+          width: calc((360 / 1240) * 100%);
           position: absolute;
           top: 2%;
           left: 50%;
           -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
           transform: translateX(-50%); }
-        article section.banner .wrapper .main .item a.menuBtn {
-          width: 240px;
-          display: block;
-          position: absolute;
-          bottom: 5%;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-          z-index: 99; }
-          article section.banner .wrapper .main .item a.menuBtn:before {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            background-color: #99443d;
-            border: 3px solid #321f1f;
-            border-radius: 38px;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            position: absolute;
-            top: 10px;
-            left: 0; }
-          article section.banner .wrapper .main .item a.menuBtn .box {
-            text-align: center;
-            background-color: #e57863;
-            border: 3px solid #321f1f;
-            border-radius: 38px;
-            position: relative;
-            -webkit-transition: .3s;
-            -o-transition: .3s;
-            transition: .3s; }
-            article section.banner .wrapper .main .item a.menuBtn .box .ham {
-              width: 25px;
-              height: 25px;
-              position: relative;
-              display: inline-block;
-              margin-right: 5px; }
-              article section.banner .wrapper .main .item a.menuBtn .box .ham .line {
-                width: 100%;
-                height: 4px;
-                border-radius: 2px;
-                background-color: #fff;
-                -webkit-transition: .5s;
-                -o-transition: .5s;
-                transition: .5s;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto; }
-                article section.banner .wrapper .main .item a.menuBtn .box .ham .line:nth-of-type(1) {
-                  -webkit-transform: translateY(-10px);
-                  -ms-transform: translateY(-10px);
-                  transform: translateY(-10px); }
-                article section.banner .wrapper .main .item a.menuBtn .box .ham .line:nth-of-type(3) {
-                  -webkit-transform: translateY(10px);
-                  -ms-transform: translateY(10px);
-                  transform: translateY(10px); }
-            article section.banner .wrapper .main .item a.menuBtn .box p {
-              font-size: 34px;
-              line-height: 66px;
-              color: #fff;
-              display: inline-block; }
-            article section.banner .wrapper .main .item a.menuBtn .box p.close {
-              display: none; }
-          article section.banner .wrapper .main .item a.menuBtn:hover .box {
-            -webkit-transform: translateY(10px);
-            -ms-transform: translateY(10px);
-            transform: translateY(10px); }
     @media only screen and (max-width: 2400px) {
       article section.banner .wrapper {
         max-width: 1140px; }
@@ -327,92 +260,19 @@ article section.banner {
           margin-top: 10%; }
           article section.banner .wrapper .main .console-container {
             font-size: 46px;
-            top: -15%; }
-          article section.banner .wrapper .main .item a.menuBtn {
-            width: 200px; }
-            article section.banner .wrapper .main .item a.menuBtn:before {
-              content: "";
-              display: block;
-              border-radius: 31px;
-              top: 7px; }
-            article section.banner .wrapper .main .item a.menuBtn .box .ham {
-              width: 22px;
-              height: 22px;
-              border-radius: 31px; }
-              article section.banner .wrapper .main .item a.menuBtn .box .ham .line {
-                height: 3px;
-                border-radius: 1.5px; }
-                article section.banner .wrapper .main .item a.menuBtn .box .ham .line:nth-of-type(1) {
-                  -webkit-transform: translateY(-8px);
-                  -ms-transform: translateY(-8px);
-                  transform: translateY(-8px); }
-                article section.banner .wrapper .main .item a.menuBtn .box .ham .line:nth-of-type(3) {
-                  -webkit-transform: translateY(8px);
-                  -ms-transform: translateY(8px);
-                  transform: translateY(8px); }
-            article section.banner .wrapper .main .item a.menuBtn .box p {
-              font-size: 28px;
-              line-height: 56px; }
-            article section.banner .wrapper .main .item a.menuBtn:hover .box {
-              -webkit-transform: translateY(7px);
-              -ms-transform: translateY(7px);
-              transform: translateY(7px); } }
+            top: -15%; } }
     @media only screen and (max-width: 1400px) {
       article section.banner .wrapper .main {
         margin-top: 7%; }
         article section.banner .wrapper .main .console-container {
-          font-size: 36px; }
-        article section.banner .wrapper .main .item a.menuBtn {
-          width: 150px; }
-          article section.banner .wrapper .main .item a.menuBtn:before {
-            content: "";
-            display: block;
-            border-radius: 23px; }
-          article section.banner .wrapper .main .item a.menuBtn .box .ham {
-            width: 15px;
-            height: 15px;
-            border-radius: 23px;
-            margin-right: 3px; }
-            article section.banner .wrapper .main .item a.menuBtn .box .ham .line {
-              height: 2px;
-              border-radius: 1px; }
-              article section.banner .wrapper .main .item a.menuBtn .box .ham .line:nth-of-type(1) {
-                -webkit-transform: translateY(-6px);
-                -ms-transform: translateY(-6px);
-                transform: translateY(-6px); }
-              article section.banner .wrapper .main .item a.menuBtn .box .ham .line:nth-of-type(3) {
-                -webkit-transform: translateY(6px);
-                -ms-transform: translateY(6px);
-                transform: translateY(6px); }
-          article section.banner .wrapper .main .item a.menuBtn .box p {
-            font-size: 22px;
-            line-height: 40px; } }
+          font-size: 36px; } }
     article section.banner .wrapper .main.itemHide .console-container, article section.banner .wrapper .main.itemHide .bigCloud, article section.banner .wrapper .main.itemHide .mountainCow, article section.banner .wrapper .main.itemHide .mountainCableCar, article section.banner .wrapper .main.itemHide .buildings, article section.banner .wrapper .main.itemHide .one0one, article section.banner .wrapper .main.itemHide .grove, article section.banner .wrapper .main.itemHide .floorBottom01, article section.banner .wrapper .main.itemHide .floorBottom02, article section.banner .wrapper .main.itemHide .floorBottom02, article section.banner .wrapper .main.itemHide .cars, article section.banner .wrapper .main.itemHide .tree, article section.banner .wrapper .main.itemHide .me {
       opacity: 0; }
     article section.banner .wrapper .main.menuOpen {
       margin-top: 0; }
       article section.banner .wrapper .main.menuOpen .floor {
-        padding-bottom: 55%;
         -webkit-transform: scaleY(0.5) rotateX(180deg);
         transform: scaleY(0.5) rotateX(180deg); }
-      article section.banner .wrapper .main.menuOpen a.menuBtn .box .ham {
-        margin-bottom: -1px; }
-        article section.banner .wrapper .main.menuOpen a.menuBtn .box .ham .line {
-          width: 120%; }
-          article section.banner .wrapper .main.menuOpen a.menuBtn .box .ham .line:nth-of-type(1) {
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg); }
-          article section.banner .wrapper .main.menuOpen a.menuBtn .box .ham .line:nth-of-type(2) {
-            width: 0; }
-          article section.banner .wrapper .main.menuOpen a.menuBtn .box .ham .line:nth-of-type(3) {
-            -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg); }
-      article section.banner .wrapper .main.menuOpen a.menuBtn .box p.open {
-        display: none; }
-      article section.banner .wrapper .main.menuOpen a.menuBtn .box p.close {
-        display: inline-block; }
       article section.banner .wrapper .main.menuOpen .menu {
         -webkit-transform: scaleY(1) rotateX(360deg);
         transform: scaleY(1) rotateX(360deg); }
