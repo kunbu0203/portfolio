@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900");
 * {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
   font-weight: 700; }
 
 img {
@@ -8,7 +9,8 @@ img {
   vertical-align: top; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  display: block; }
 
 .menu {
   width: calc((850 / 1240) * 100%);
@@ -35,6 +37,9 @@ a {
     display: block;
     width: 100%;
     height: 100%;
+    background-image: url(../images/map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #f4f4f4;
     border: 5px solid #321f1f;
     border-radius: 5px;
@@ -45,10 +50,51 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
   .menu .wrapperMenu {
+    width: 100%;
     opacity: 0;
     -webkit-transition: .7s ease-in-out;
     -o-transition: .7s ease-in-out;
     transition: .7s ease-in-out; }
+    .menu .wrapperMenu .wrapperLocation {
+      width: 85%;
+      padding-bottom: 80%;
+      margin: auto;
+      position: relative;
+      z-index: 50; }
+      .menu .wrapperMenu .wrapperLocation .location {
+        display: inline-block;
+        position: absolute; }
+        .menu .wrapperMenu .wrapperLocation .location figure {
+          width: 60px;
+          display: inline-block;
+          vertical-align: bottom; }
+        .menu .wrapperMenu .wrapperLocation .location p {
+          font-size: 36px;
+          display: inline-block;
+          color: #321f1f;
+          line-height: 1;
+          vertical-align: bottom; }
+          @media only screen and (max-width: 2400px) {
+            .menu .wrapperMenu .wrapperLocation .location p {
+              font-size: 28px; } }
+          @media only screen and (max-width: 1400px) {
+            .menu .wrapperMenu .wrapperLocation .location p {
+              font-size: 22px; } }
+      .menu .wrapperMenu .wrapperLocation #aboutMe {
+        top: 10%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+      .menu .wrapperMenu .wrapperLocation #experience {
+        top: 50%;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      .menu .wrapperMenu .wrapperLocation #portfolio {
+        bottom: 10%;
+        left: 10%; }
 
 a.menuBtn {
   width: 240px;
@@ -69,7 +115,7 @@ a.menuBtn {
     height: 100%;
     background-color: #99443d;
     border: 3px solid #321f1f;
-    border-radius: 38px;
+    border-radius: 39px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: absolute;
@@ -79,7 +125,7 @@ a.menuBtn {
     text-align: center;
     background-color: #e57863;
     border: 3px solid #321f1f;
-    border-radius: 38px;
+    border-radius: 39px;
     position: relative;
     -webkit-transition: .3s;
     -o-transition: .3s;
@@ -89,8 +135,7 @@ a.menuBtn {
       height: 25px;
       position: relative;
       display: inline-block;
-      margin-right: 5px;
-      margin-bottom: -1px; }
+      margin-right: 5px; }
       a.menuBtn .box .ham .line {
         width: 100%;
         height: 4px;
@@ -153,10 +198,16 @@ a.menuBtn {
           -ms-transform: rotate(-45deg);
           transform: rotate(-45deg); }
     a.menuBtn .box p {
-      font-size: 34px;
-      line-height: 66px;
-      color: #fff;
-      display: inline-block; }
+      font-size: 36px;
+      display: inline-block;
+      line-height: 2;
+      color: #fff; }
+      @media only screen and (max-width: 2400px) {
+        a.menuBtn .box p {
+          font-size: 28px; } }
+      @media only screen and (max-width: 1400px) {
+        a.menuBtn .box p {
+          font-size: 22px; } }
   a.menuBtn:hover .box {
     -webkit-transform: translateY(10px);
     -ms-transform: translateY(10px);
@@ -167,12 +218,10 @@ a.menuBtn {
       a.menuBtn:before {
         content: "";
         display: block;
-        border-radius: 31px;
         top: 7px; }
       a.menuBtn .box .ham {
         width: 22px;
-        height: 22px;
-        border-radius: 31px; }
+        height: 22px; }
         a.menuBtn .box .ham .line:nth-of-type(1) {
           -webkit-transform: translateY(-8px);
           -ms-transform: translateY(-8px);
@@ -181,9 +230,6 @@ a.menuBtn {
           -webkit-transform: translateY(8px);
           -ms-transform: translateY(8px);
           transform: translateY(8px); }
-      a.menuBtn .box p {
-        font-size: 28px;
-        line-height: 56px; }
       a.menuBtn:hover .box {
         -webkit-transform: translateY(7px);
         -ms-transform: translateY(7px);
@@ -193,12 +239,10 @@ a.menuBtn {
       width: 150px; }
       a.menuBtn:before {
         content: "";
-        display: block;
-        border-radius: 23px; }
+        display: block; }
       a.menuBtn .box .ham {
         width: 15px;
         height: 15px;
-        border-radius: 23px;
         margin-right: 3px;
         margin-bottom: 0; }
         a.menuBtn .box .ham .line:nth-of-type(1) {
@@ -208,7 +252,4 @@ a.menuBtn {
         a.menuBtn .box .ham .line:nth-of-type(3) {
           -webkit-transform: translateY(6px);
           -ms-transform: translateY(6px);
-          transform: translateY(6px); }
-      a.menuBtn .box p {
-        font-size: 22px;
-        line-height: 40px; } }
+          transform: translateY(6px); } }

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900");
 * {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
   font-weight: 700; }
 
 img {
@@ -8,7 +9,8 @@ img {
   vertical-align: top; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  display: block; }
 
 @-webkit-keyframes drive {
   0% {
@@ -110,7 +112,10 @@ article section.banner {
         top: -13%;
         left: 0; }
       article section.banner .wrapper .main .console-underscore {
-        display: inline-block; }
+        display: inline-block;
+        font-family: 'Noto Sans TC', sans-serif; }
+      article section.banner .wrapper .main .hidden {
+        opacity: 0; }
       article section.banner .wrapper .main .bigCloud, article section.banner .wrapper .main .mountainCow, article section.banner .wrapper .main .mountainCableCar {
         width: 50%;
         -webkit-transform: skewY(-26.5deg);

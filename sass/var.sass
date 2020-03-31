@@ -73,46 +73,72 @@
 	transform: translate(-50%,-50%)
 
 =fontH1()
-  font-size: 52px
-  line-height: 1.5
-  +rwd(768px)
-    font-size: 33px
-  
+	font-size: 52px
+	line-height: 1.5
+	+rwd(768px)
+	font-size: 33px
+	
 =fontH2()
-  font-size: 42px
-  line-height: 1.5
-  +rwd(768px)
-    font-size: 22px
-  
+	font-size: 42px
+	line-height: 1.5
+	+rwd(768px)
+	font-size: 22px
+	
 =fontH3()
-  font-size: 23px
-  line-height: 1.5
-  +rwd(768px)
-    font-size: 18px
-  
+	font-size: 23px
+	line-height: 1.5
+	+rwd(768px)
+	font-size: 18px
+	
 =fontP()
-  font-size: 20px
-  line-height: 1.5
-  +rwd(768px)
-    font-size: 14px
-  
+	font-size: 20px
+	line-height: 1.5
+	+rwd(768px)
+	font-size: 14px
+
+=fontBtn()
+	font-size: 36px
+	display: inline-block
+	@content
+	+rwd(2400px)
+		font-size: 28px
+	+rwd(1400px)
+		font-size: 22px
+	
 =fontFooter()
-  font-size: 14px
-  // line-height: 1.5
-  +rwd(768px)
-    font-size: 12px
+	font-size: 14px
+	// line-height: 1.5
+	+rwd(768px)
+	font-size: 12px
 
 =enfont
-  font-family: 'Oswald', sans-serif
+	font-family: 'Oswald', sans-serif
 
 =dib
-  display: inline-block
-  vertical-align: middle
+	display: inline-block
+	vertical-align: middle
+
+=lineStyle
+    width: 100%
+    height: 4px
+    border-radius: 2px
+    background-color: #fff
+    transition: .5s
+    +pstc0
+    @content
+    +rwd(2400px)
+        height: 3px
+        border-radius: 1.5px
+    +rwd(1400px)
+        height: 2px
+        border-radius: 1px
+
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900');
 
 *
-	font-family: 'Quicksand', sans-serif
+	font-family: 'Quicksand', 'Noto Sans TC', sans-serif
 	font-weight: 700
 
 img
@@ -121,6 +147,7 @@ img
 
 a
 	text-decoration: none
+	display: block
 
 $brown: #321f1f
 $floor: #f4f4f4
