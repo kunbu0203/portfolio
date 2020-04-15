@@ -1,287 +1,333 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900");
 * {
-  font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
-  font-weight: 700; }
+  font-family: "Quicksand", "Noto Sans TC", sans-serif;
+  font-weight: 700;
+}
 
 img {
   width: 100%;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 a {
   text-decoration: none;
-  display: block; }
+  display: block;
+}
 
 @-webkit-keyframes drive {
   0% {
     -webkit-transform: translateX(0px);
-    transform: translateX(0px); }
+            transform: translateX(0px);
+  }
   25% {
     -webkit-transform: translateX(10px);
-    transform: translateX(10px); }
+            transform: translateX(10px);
+  }
   50% {
     -webkit-transform: translateX(0px);
-    transform: translateX(0px); }
+            transform: translateX(0px);
+  }
   75% {
     -webkit-transform: translateX(-10px);
-    transform: translateX(-10px); }
+            transform: translateX(-10px);
+  }
   100% {
     -webkit-transform: translateX(0px);
-    transform: translateX(0px); } }
-
-@-moz-keyframes drive {
-  0% {
-    transform: translateX(0px); }
-  25% {
-    transform: translateX(10px); }
-  50% {
-    transform: translateX(0px); }
-  75% {
-    transform: translateX(-10px); }
-  100% {
-    transform: translateX(0px); } }
-
-@-ms-keyframes drive {
-  0% {
-    -ms-transform: translateX(0px);
-    transform: translateX(0px); }
-  25% {
-    -ms-transform: translateX(10px);
-    transform: translateX(10px); }
-  50% {
-    -ms-transform: translateX(0px);
-    transform: translateX(0px); }
-  75% {
-    -ms-transform: translateX(-10px);
-    transform: translateX(-10px); }
-  100% {
-    -ms-transform: translateX(0px);
-    transform: translateX(0px); } }
-
+            transform: translateX(0px);
+  }
+}
 @keyframes drive {
   0% {
     -webkit-transform: translateX(0px);
-    transform: translateX(0px); }
+            transform: translateX(0px);
+  }
   25% {
     -webkit-transform: translateX(10px);
-    transform: translateX(10px); }
+            transform: translateX(10px);
+  }
   50% {
     -webkit-transform: translateX(0px);
-    transform: translateX(0px); }
+            transform: translateX(0px);
+  }
   75% {
     -webkit-transform: translateX(-10px);
-    transform: translateX(-10px); }
+            transform: translateX(-10px);
+  }
   100% {
     -webkit-transform: translateX(0px);
-    transform: translateX(0px); } }
-
+            transform: translateX(0px);
+  }
+}
 article section.banner {
   width: 100%;
   height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e8edec), to(#c9c9c9));
-  background-image: -webkit-linear-gradient(#e8edec, #c9c9c9);
   background-image: -o-linear-gradient(#e8edec, #c9c9c9);
   background-image: linear-gradient(#e8edec, #c9c9c9);
   position: relative;
-  overflow: hidden; }
-  article section.banner .wrapper {
-    width: 100%;
-    max-width: 1240px;
-    margin: auto;
-    padding: 0 20px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-    article section.banner .wrapper .main {
-      width: 100%;
-      max-width: 125vh;
-      position: relative;
-      margin: auto;
-      -webkit-transition: .7s ease-in-out;
-      -o-transition: .7s ease-in-out;
-      transition: .7s ease-in-out; }
-      article section.banner .wrapper .main .console-container {
-        font-size: 52px;
-        color: #321f1f;
-        position: absolute;
-        top: -13%;
-        left: 0; }
-      article section.banner .wrapper .main .console-underscore {
-        display: inline-block;
-        font-family: 'Noto Sans TC', sans-serif; }
-      article section.banner .wrapper .main .hidden {
-        opacity: 0; }
-      article section.banner .wrapper .main .bigCloud, article section.banner .wrapper .main .mountainCow, article section.banner .wrapper .main .mountainCableCar {
-        width: 50%;
-        -webkit-transform: skewY(-26.5deg);
-        -ms-transform: skewY(-26.5deg);
-        transform: skewY(-26.5deg);
-        -webkit-transform-origin: left;
-        -ms-transform-origin: left;
-        transform-origin: left;
-        position: absolute;
-        top: 9%;
-        left: 0; }
-      article section.banner .wrapper .main .buildings, article section.banner .wrapper .main .one0one, article section.banner .wrapper .main .grove {
-        width: 50%;
-        -webkit-transform: skewY(26.5deg);
-        -ms-transform: skewY(26.5deg);
-        transform: skewY(26.5deg);
-        -webkit-transform-origin: right;
-        -ms-transform-origin: right;
-        transform-origin: right;
-        position: absolute;
-        top: 9%;
-        right: 0; }
-      article section.banner .wrapper .main .floorBottom01, article section.banner .wrapper .main .floorBottom02 {
-        width: calc((850 / 1240) * 100%);
-        padding-bottom: calc((850 / 1240) * 100%);
-        position: absolute;
-        bottom: -8%;
-        left: 50%;
-        -webkit-transform: translateX(-50%) scaleY(0.5);
-        -ms-transform: translateX(-50%) scaleY(0.5);
-        transform: translateX(-50%) scaleY(0.5);
-        -webkit-transform-origin: bottom;
-        -ms-transform-origin: bottom;
-        transform-origin: bottom; }
-        article section.banner .wrapper .main .floorBottom01:before, article section.banner .wrapper .main .floorBottom02:before {
-          content: "";
-          display: block;
-          width: 100%;
-          height: 100%;
-          border: 5px solid #321f1f;
-          border-radius: 5px;
-          background-color: #c6c1bd;
-          position: absolute;
-          -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-      article section.banner .wrapper .main .floorBottom02 {
-        bottom: -4%; }
-      article section.banner .wrapper .main .console-container, article section.banner .wrapper .main .bigCloud, article section.banner .wrapper .main .mountainCow, article section.banner .wrapper .main .mountainCableCar, article section.banner .wrapper .main .buildings, article section.banner .wrapper .main .one0one, article section.banner .wrapper .main .grove, article section.banner .wrapper .main .floorBottom01, article section.banner .wrapper .main .floorBottom02, article section.banner .wrapper .main .floorBottom02, article section.banner .wrapper .main .cars, article section.banner .wrapper .main .tree, article section.banner .wrapper .main .me {
-        -webkit-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
-        transition: .5s ease-in-out; }
-      article section.banner .wrapper .main .item {
-        position: relative; }
-        article section.banner .wrapper .main .item .floor {
-          width: calc((850 / 1240) * 100%);
-          padding-bottom: calc((850 / 1240) * 100%);
-          position: relative;
-          -webkit-transform: scaleY(0.5) rotateX(0deg);
-          transform: scaleY(0.5) rotateX(0deg);
-          -webkit-transform-origin: bottom;
-          -ms-transform-origin: bottom;
-          transform-origin: bottom;
-          margin: auto;
-          -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-          -webkit-transition: .7s ease-in-out;
-          -o-transition: .7s ease-in-out;
-          transition: .7s ease-in-out; }
-          article section.banner .wrapper .main .item .floor:before {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            background-color: #f4f4f4;
-            border: 5px solid #321f1f;
-            border-radius: 5px;
-            background-image: url(../images/background.png);
-            background-size: 20%;
-            background-repeat: repeat;
-            position: absolute;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-        article section.banner .wrapper .main .item .cars {
-          width: calc((90 / 1240) * 100%);
-          position: absolute; }
-        article section.banner .wrapper .main .item .tree {
-          width: calc((60 / 1240) * 100%);
-          position: absolute; }
-        article section.banner .wrapper .main .item .left {
-          -webkit-transform: skewY(-26.5deg);
-          -ms-transform: skewY(-26.5deg);
+  overflow: hidden;
+}
+article section.banner .wrapper {
+  width: 100%;
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+article section.banner .wrapper .main {
+  width: 100%;
+  max-width: 125vh;
+  position: relative;
+  margin: auto;
+  -webkit-transition: 0.7s ease-in-out;
+  -o-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+article section.banner .wrapper .main .console-container {
+  width: 100%;
+  font-size: 52px;
+  color: #321f1f;
+  position: absolute;
+  top: -13%;
+  left: 0;
+}
+article section.banner .wrapper .main .console-container span {
+  line-height: 1.2;
+}
+article section.banner .wrapper .main .console-underscore {
+  display: inline-block;
+  font-family: "Noto Sans TC", sans-serif;
+}
+article section.banner .wrapper .main .hidden {
+  opacity: 0;
+}
+article section.banner .wrapper .main .bigCloud, article section.banner .wrapper .main .mountainCow, article section.banner .wrapper .main .mountainCableCar {
+  width: 50%;
+  -webkit-transform: skewY(-26.5deg);
+      -ms-transform: skewY(-26.5deg);
           transform: skewY(-26.5deg);
-          -webkit-transform-origin: left;
-          -ms-transform-origin: left;
-          transform-origin: left; }
-        article section.banner .wrapper .main .item .right {
-          -webkit-transform: skewY(26.5deg);
-          -ms-transform: skewY(26.5deg);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+  position: absolute;
+  top: 9%;
+  left: 0;
+}
+article section.banner .wrapper .main .buildings, article section.banner .wrapper .main .one0one, article section.banner .wrapper .main .grove {
+  width: 50%;
+  -webkit-transform: skewY(26.5deg);
+      -ms-transform: skewY(26.5deg);
           transform: skewY(26.5deg);
-          -webkit-transform-origin: right;
-          -ms-transform-origin: right;
-          transform-origin: right; }
-        article section.banner .wrapper .main .item .cars.left {
-          bottom: 40%;
-          left: 31%; }
-          article section.banner .wrapper .main .item .cars.left figure {
-            -webkit-animation: drive 5s infinite linear;
-            -moz-animation: drive 5s infinite linear;
-            -o-animation: drive 5s infinite linear;
-            animation: drive 5s infinite linear; }
-        article section.banner .wrapper .main .item .tree.left {
-          bottom: 20%;
-          left: 20%; }
-        article section.banner .wrapper .main .item .tree.right {
-          bottom: 40%;
-          left: 63%;
-          -webkit-transform: skewY(26.5deg) scale(0.8);
-          -ms-transform: skewY(26.5deg) scale(0.8);
-          transform: skewY(26.5deg) scale(0.8); }
-        article section.banner .wrapper .main .item .cars.right {
-          bottom: 20%;
-          left: 75%; }
-          article section.banner .wrapper .main .item .cars.right figure {
-            -webkit-animation: drive 5.5s -1s infinite linear;
-            -moz-animation: drive 5.5s -1s infinite linear;
-            -o-animation: drive 5.5s -1s infinite linear;
-            animation: drive 5.5s -1s infinite linear; }
-        article section.banner .wrapper .main .item .me {
-          width: calc((360 / 1240) * 100%);
-          position: absolute;
-          top: 2%;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          transform: translateX(-50%); }
-    @media only screen and (max-width: 2400px) {
-      article section.banner .wrapper {
-        max-width: 1140px; }
-        article section.banner .wrapper .main {
-          max-width: 115vh;
-          margin-top: 10%; }
-          article section.banner .wrapper .main .console-container {
-            font-size: 46px;
-            top: -15%; } }
-    @media only screen and (max-width: 1400px) {
-      article section.banner .wrapper .main {
-        margin-top: 7%; }
-        article section.banner .wrapper .main .console-container {
-          font-size: 36px; } }
-    article section.banner .wrapper .main.itemHide .console-container, article section.banner .wrapper .main.itemHide .bigCloud, article section.banner .wrapper .main.itemHide .mountainCow, article section.banner .wrapper .main.itemHide .mountainCableCar, article section.banner .wrapper .main.itemHide .buildings, article section.banner .wrapper .main.itemHide .one0one, article section.banner .wrapper .main.itemHide .grove, article section.banner .wrapper .main.itemHide .floorBottom01, article section.banner .wrapper .main.itemHide .floorBottom02, article section.banner .wrapper .main.itemHide .floorBottom02, article section.banner .wrapper .main.itemHide .cars, article section.banner .wrapper .main.itemHide .tree, article section.banner .wrapper .main.itemHide .me {
-      opacity: 0; }
-    article section.banner .wrapper .main.menuOpen {
-      margin-top: 0; }
-      article section.banner .wrapper .main.menuOpen .floor {
-        -webkit-transform: scaleY(0.5) rotateX(180deg);
-        transform: scaleY(0.5) rotateX(180deg); }
-      article section.banner .wrapper .main.menuOpen .menuBtn.open {
-        opacity: 0; }
-      article section.banner .wrapper .main.menuOpen .menu {
-        -webkit-transform: scaleY(1) rotateX(360deg);
-        transform: scaleY(1) rotateX(360deg); }
-        article section.banner .wrapper .main.menuOpen .menu .wrapperMenu {
-          opacity: 1; }
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  position: absolute;
+  top: 9%;
+  right: 0;
+}
+article section.banner .wrapper .main .floorBottom01, article section.banner .wrapper .main .floorBottom02 {
+  width: calc((850 / 1240) * 100%);
+  padding-bottom: calc((850 / 1240) * 100%);
+  position: absolute;
+  bottom: -8%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scaleY(0.5);
+      -ms-transform: translateX(-50%) scaleY(0.5);
+          transform: translateX(-50%) scaleY(0.5);
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+}
+article section.banner .wrapper .main .floorBottom01:before, article section.banner .wrapper .main .floorBottom02:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #321f1f;
+  border-radius: 5px;
+  background-color: #c6c1bd;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article section.banner .wrapper .main .floorBottom02 {
+  bottom: -4%;
+}
+article section.banner .wrapper .main .console-container, article section.banner .wrapper .main .bigCloud, article section.banner .wrapper .main .mountainCow, article section.banner .wrapper .main .mountainCableCar, article section.banner .wrapper .main .buildings, article section.banner .wrapper .main .one0one, article section.banner .wrapper .main .grove, article section.banner .wrapper .main .floorBottom01, article section.banner .wrapper .main .floorBottom02, article section.banner .wrapper .main .cars, article section.banner .wrapper .main .tree, article section.banner .wrapper .main .me {
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+article section.banner .wrapper .main .items {
+  position: relative;
+}
+article section.banner .wrapper .main .items .floor {
+  width: calc((850 / 1240) * 100%);
+  padding-bottom: calc((850 / 1240) * 100%);
+  position: relative;
+  -webkit-transform: scaleY(0.5) rotateX(0deg);
+          transform: scaleY(0.5) rotateX(0deg);
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  margin: auto;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: 0.7s ease-in-out;
+  -o-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+article section.banner .wrapper .main .items .floor:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  border: 5px solid #321f1f;
+  border-radius: 5px;
+  background-image: url(../images/background.png);
+  background-size: 20%;
+  background-repeat: repeat;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article section.banner .wrapper .main .items .cars {
+  width: calc((90 / 1240) * 100%);
+  position: absolute;
+}
+article section.banner .wrapper .main .items .tree {
+  width: calc((60 / 1240) * 100%);
+  position: absolute;
+}
+article section.banner .wrapper .main .items .left {
+  -webkit-transform: skewY(-26.5deg);
+      -ms-transform: skewY(-26.5deg);
+          transform: skewY(-26.5deg);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+}
+article section.banner .wrapper .main .items .right {
+  -webkit-transform: skewY(26.5deg);
+      -ms-transform: skewY(26.5deg);
+          transform: skewY(26.5deg);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+}
+article section.banner .wrapper .main .items .cars.left {
+  bottom: 40%;
+  left: 31%;
+}
+article section.banner .wrapper .main .items .cars.left figure {
+  -webkit-animation: drive 5s infinite linear;
+  animation: drive 5s infinite linear;
+}
+article section.banner .wrapper .main .items .tree.left {
+  bottom: 20%;
+  left: 20%;
+}
+article section.banner .wrapper .main .items .tree.right {
+  bottom: 40%;
+  left: 63%;
+  -webkit-transform: skewY(26.5deg) scale(0.8);
+      -ms-transform: skewY(26.5deg) scale(0.8);
+          transform: skewY(26.5deg) scale(0.8);
+}
+article section.banner .wrapper .main .items .cars.right {
+  bottom: 20%;
+  left: 75%;
+}
+article section.banner .wrapper .main .items .cars.right figure {
+  -webkit-animation: drive 5.5s -1s infinite linear;
+  animation: drive 5.5s -1s infinite linear;
+}
+article section.banner .wrapper .main .items .me {
+  width: calc((360 / 1240) * 100%);
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media only screen and (max-width: 2400px) {
+  article section.banner .wrapper {
+    max-width: 1140px;
+    top: 55%;
+  }
+  article section.banner .wrapper .main {
+    max-width: 115vh;
+  }
+  article section.banner .wrapper .main .console-container {
+    font-size: 46px;
+    top: -15%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  article section.banner .wrapper .main .console-container {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  article section.banner .wrapper {
+    width: 130%;
+  }
+  article section.banner .wrapper .main .console-container {
+    text-align: center;
+    width: 70%;
+    top: -20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 640px) {
+  article section.banner .wrapper {
+    width: 150%;
+  }
+  article section.banner .wrapper .main .console-container {
+    font-size: 30px;
+    width: 65%;
+    top: -35%;
+  }
+  article section.banner .wrapper .main .items .me {
+    top: 0;
+  }
+}
+article section.banner .wrapper .main.itemHide .console-container, article section.banner .wrapper .main.itemHide .bigCloud, article section.banner .wrapper .main.itemHide .mountainCow, article section.banner .wrapper .main.itemHide .mountainCableCar, article section.banner .wrapper .main.itemHide .buildings, article section.banner .wrapper .main.itemHide .one0one, article section.banner .wrapper .main.itemHide .grove, article section.banner .wrapper .main.itemHide .floorBottom01, article section.banner .wrapper .main.itemHide .floorBottom02, article section.banner .wrapper .main.itemHide .cars, article section.banner .wrapper .main.itemHide .tree, article section.banner .wrapper .main.itemHide .me {
+  opacity: 0;
+}
+article section.banner .wrapper .main.menuOpen {
+  margin-top: 0;
+}
+article section.banner .wrapper .main.menuOpen .floor {
+  -webkit-transform: scaleY(0.5) rotateX(180deg);
+          transform: scaleY(0.5) rotateX(180deg);
+}
+article section.banner .wrapper .main.menuOpen .menuBtn.open {
+  opacity: 0;
+}
+article section.banner .wrapper .main.menuOpen .menu {
+  -webkit-transform: scaleY(1) rotateX(360deg);
+          transform: scaleY(1) rotateX(360deg);
+}
+article section.banner .wrapper .main.menuOpen .menu .wrapperMenu {
+  opacity: 1;
+}
