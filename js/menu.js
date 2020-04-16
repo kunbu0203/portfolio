@@ -9,14 +9,16 @@
 $(document).ready(function () {
     $('.open').click(function (e) { 
         e.preventDefault();
-        $(".main").addClass("itemHide").delay(500).queue(function(){
-            $(this).addClass("menuOpen").dequeue();
+        $('.main').addClass('itemHide').delay(500).queue(function(){
+            $(this).addClass('menuOpen');
+            $(this).dequeue();
         });
     });
     $('.close').click(function (e) { 
         e.preventDefault();
         $(".main").removeClass("menuOpen").delay(700).queue(function(){
-            $(this).removeClass("itemHide").dequeue();
+            $(this).removeClass("itemHide");
+            $(this).dequeue();
         });
     });
 });

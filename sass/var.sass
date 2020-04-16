@@ -19,11 +19,17 @@
 		clear: both
 
 =wrapperStyle
-	width: 100%
+	width: 70%
 	max-width: 1240px
 	margin: auto
 	padding: 0 20px
 	box-sizing: border-box
+	+rwd(2400px)
+		max-width: 1040px
+	+rwd(768px)
+		width: 90%
+	+rwd(640px)
+		width: 100%
 	
 =keyframes($name)
 	@-webkit-keyframes #{$name}
@@ -72,33 +78,60 @@
 	left: $l
 	transform: translate(-50%,-50%)
 
-=fontH1()
-	font-size: 52px
-	line-height: 1.5
-	+rwd(768px)
-	font-size: 33px
-	
-=fontH2()
-	font-size: 42px
-	line-height: 1.5
-	+rwd(768px)
-	font-size: 22px
-	
+// =fontH1()
+// 	font-size: 52px
+// 	line-height: 1.5
+// 	+rwd(768px)
+// 		font-size: 33px
+
+// =fontH2()
+// 	font-size: 42px
+// 	line-height: 1.5
+// 	+rwd(768px)
+// 		font-size: 22px
+
 =fontH3()
-	font-size: 23px
+	font-size: 30px
 	line-height: 1.5
+	color: $brown
+	font-weight: 700
 	+rwd(768px)
-	font-size: 18px
-	
-=fontP()
+		font-size: 22px
+
+=fontH4()
 	font-size: 20px
 	line-height: 1.5
+	color: $brown
+	font-weight: 700
 	+rwd(768px)
-	font-size: 14px
+		font-size: 16px
+
+
+=fontP()
+	font-size: 16px
+	line-height: 1.8
+	color: $brown
+	font-weight: 700
+	+rwd(768px)
+		font-size: 14px
+
+=fontTitle()
+	font-size: 42px
+	line-height: 0.8
+	color: $brown
+	font-weight: 700
+	+rwd(1400px)
+		font-size: 36px
+	+rwd(768px)
+		font-size: 30px
+	+rwd(640px)
+		font-size: 28px
 
 =fontBtn()
 	font-size: 36px
 	display: inline-block
+	color: $brown
+	font-weight: 700
 	@content
 	+rwd(2400px)
 		font-size: 28px
@@ -106,12 +139,12 @@
 		font-size: 22px
 	+rwd(640px)
 		font-size: 20px
-	
+
 =fontFooter()
 	font-size: 14px
 	// line-height: 1.5
 	+rwd(768px)
-	font-size: 12px
+		font-size: 12px
 
 =enfont
 	font-family: 'Oswald', sans-serif
@@ -141,7 +174,7 @@
 
 *
 	font-family: 'Quicksand', 'Noto Sans TC', sans-serif
-	font-weight: 700
+	// font-weight: 700
 
 img
 	width: 100%
@@ -152,5 +185,5 @@ a
 	display: block
 
 $brown: #321f1f
-$floor: #f4f4f4
+$floor: #EDEDED
 $pink: #e57863

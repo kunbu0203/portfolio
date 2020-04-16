@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900");
 * {
   font-family: "Quicksand", "Noto Sans TC", sans-serif;
-  font-weight: 700;
 }
 
 img {
@@ -41,7 +40,7 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #f4f4f4;
+  background-color: #EDEDED;
   border: 5px solid #321f1f;
   border-radius: 5px;
   position: absolute;
