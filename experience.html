@@ -18,24 +18,104 @@
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <link rel="stylesheet" href="./css/css_reset.css"/>
     <link rel="stylesheet" href="./css/common.css"/>
-    <link rel="stylesheet" href="./css/index.css"/>
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./css/experience.css"/>
+    <script src="./js/libs/jquery-3.4.1.min.js"></script>
   </head>
   <body>
-    <article>
+    <article class="hide">
       <div class="wrapper">
         <div class="title">
           <figure><img src="./images/experience.png" alt=""/></figure>
           <p>Experience</p>
         </div>
         <div class="content">
-          <section class="information"></section>
-          <section class="skill"></section>
+          <section>
+            <div class="university">
+              <figure class="building"><img src="./images/school.png" alt=""/></figure>
+              <div class="txt">
+                <div class="circle"></div>
+                <p>2017.05</p>
+                <h4>銘傳大學商品設計學系畢業</h4>
+              </div>
+              <figure class="tree"><img src="./images/tree02.png" alt=""/></figure>
+            </div>
+            <div class="clothingArtEditor">
+              <figure class="building"><img src="./images/factory.png" alt=""/><img src="./images/carBlue02.png" alt=""/></figure>
+              <div class="txt">
+                <div class="circle"></div>
+                <p>2016.09 - 2018.03</p>
+                <h4>SpacePicnic 美編人員</h4>
+              </div>
+              <figure class="tree"><img src="./images/tree01.png" alt=""/></figure>
+            </div>
+            <div class="webDesigner">
+              <figure class="building"><img src="./images/community.png" alt=""/></figure>
+              <div class="txt">
+                <div class="circle"></div>
+                <p>2018.07 - 2019.03</p>
+                <h4>台灣唯思廣告有限公司 網頁設計</h4>
+              </div>
+              <figure class="tree"><img src="./images/tree03.png" alt=""/></figure>
+            </div>
+            <div class="digitalDesigner">
+              <figure class="building"><img src="./images/building.png" alt=""/><img src="./images/carYellow.png" alt=""/></figure>
+              <div class="txt">
+                <div class="circle"></div>
+                <p>2019.05 - 2020.01</p>
+                <h4>名象數位行銷 數位設計</h4>
+                <p>2020.01 - 2020.03</p>
+                <h4>名象數位行銷 前端工程</h4>
+              </div>
+              <figure class="tree"><img src="./images/tree01.png" alt=""/><img src="./images/tree01.png" alt=""/></figure>
+            </div>
+            <div class="arrowLine">
+              <svg viewBox="0 0 81 1138">
+                <path class="cls-1" d="M71.5,5c-.06,64.76-5,130-18.46,193.49-5.48,25.9-13.46,51-21.52,76.23a579.88,579.88,0,0,0-23.44,103A948.31,948.31,0,0,0,.69,490.09c-.37,38.75,1.49,77.49,7.23,115.84,6.48,43.22,15.23,86.2,23.7,129.07,7.55,38.21,16.45,76.26,21.17,115,5.15,42.23,6,85,4.73,127.47A1045.16,1045.16,0,0,1,46.4,1102.85q-2.05,13.51-4.45,27c-1,5.66,7.66,8.1,8.68,2.39C65.1,1050.82,70.69,967,65.05,884.49,62.43,846.07,55.71,808.4,48,770.73q-13.56-66.08-25.5-132.48c-7.07-39.15-11.72-78.18-12.61-118a990.08,990.08,0,0,1,4.24-115.91c3.39-35.58,9.26-70.7,19.25-105,8.6-29.6,19.26-58.52,26.19-88.59C72.54,154.34,78.26,96.06,80,38.31q.5-16.65.5-33.31c0-5.79-9-5.8-9,0Z"></path>
+                <polyline class="cls-2" points="33.88 1113.86 45.61 1132.07 63.82 1120.34"></polyline>
+              </svg>
+            </div>
+          </section>
           <div class="contentBottom01"></div>
           <div class="contentBottom02"></div>
         </div>
       </div>
     </article>
+    <article class="menuFixHeight">
+      <div class="wrapper">
+        <div class="main">
+          <div class="items">
+            <div class="floor"></div><a class="menuBtn open" href="">
+              <div class="box">
+                <div class="ham">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+                <p>MENU</p>
+              </div></a>
+            <div class="menu">
+              <div class="wrapperMenu">
+                <div class="wrapperLocation"><a class="location" id="aboutMe" href="aboutMe.html">
+                    <figure><img src="./images/aboutMe.png" alt=""/></figure>
+                    <p>About Me</p></a><a class="location" id="portfolio" href="portfolio.html">
+                    <figure><img src="./images/portfolio.png" alt=""/></figure>
+                    <p>Portfolio</p></a><a class="location" id="experience" href="experience.html">
+                    <figure><img src="./images/experience.png" alt=""/></figure>
+                    <p>Experience</p></a></div><a class="menuBtn close" href="">
+                  <div class="box">
+                    <div class="ham">
+                      <div class="cross"></div>
+                      <div class="cross"></div>
+                    </div>
+                    <p>CLOSE</p>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
     <script src="./js/menu.js"></script>
+    <script src="./js/experience.js"></script>
   </body>
 </html>

@@ -5,33 +5,80 @@ html(lang="zh-Hant")
 		include ./includes/css_include.pug
 		//- link(rel="stylesheet" href="./css/scroll.css")
 		//- link(href='https://fonts.googleapis.com/css?family=Quicksand&display=swap', rel='stylesheet')
-		link(rel="stylesheet", href="./css/index.css")
+		link(rel="stylesheet", href="./css/experience.css")
 		//- link(rel="stylesheet", href="./css/menu.css")
-		script(src='./js/jquery-3.4.1.min.js')
-		//- link(rel="stylesheet", href="./css/product.css")
+		script(src='./js/libs/jquery-3.4.1.min.js')
 	body
-		article
+		article.hide
 			.wrapper
 				.title
 					figure
 						img(src="./images/experience.png", alt="")
 					p Experience
 				.content
-					section.information
-					section.skill
+					section
+						.university
+							figure.building
+								img(src="./images/school.png", alt="")
+							.txt
+								.circle
+								p 2017.05
+								h4 銘傳大學商品設計學系畢業
+							figure.tree
+								img(src="./images/tree02.png", alt="")
+						.clothingArtEditor
+							figure.building
+								img(src="./images/factory.png", alt="")
+								img(src="./images/carBlue02.png", alt="")
+							.txt
+								.circle
+								p 2016.09 - 2018.03
+								h4 SpacePicnic 美編人員
+							figure.tree
+								img(src="./images/tree01.png", alt="")
+						.webDesigner
+							figure.building
+								img(src="./images/community.png", alt="")
+							.txt
+								.circle
+								p 2018.07 - 2019.03
+								h4 台灣唯思廣告有限公司 網頁設計
+							figure.tree
+								img(src="./images/tree03.png", alt="")
+						.digitalDesigner
+							figure.building
+								img(src="./images/building.png", alt="")
+								img(src="./images/carYellow.png", alt="")
+							.txt
+								.circle
+								p 2019.05 - 2020.01
+								h4 名象數位行銷 數位設計
+								p 2020.01 - 2020.03
+								h4 名象數位行銷 前端工程
+							figure.tree
+								img(src="./images/tree01.png", alt="")
+								img(src="./images/tree01.png", alt="")
+						.arrowLine
+							svg(viewBox='0 0 81 1138')
+								path.cls-1(d='M71.5,5c-.06,64.76-5,130-18.46,193.49-5.48,25.9-13.46,51-21.52,76.23a579.88,579.88,0,0,0-23.44,103A948.31,948.31,0,0,0,.69,490.09c-.37,38.75,1.49,77.49,7.23,115.84,6.48,43.22,15.23,86.2,23.7,129.07,7.55,38.21,16.45,76.26,21.17,115,5.15,42.23,6,85,4.73,127.47A1045.16,1045.16,0,0,1,46.4,1102.85q-2.05,13.51-4.45,27c-1,5.66,7.66,8.1,8.68,2.39C65.1,1050.82,70.69,967,65.05,884.49,62.43,846.07,55.71,808.4,48,770.73q-13.56-66.08-25.5-132.48c-7.07-39.15-11.72-78.18-12.61-118a990.08,990.08,0,0,1,4.24-115.91c3.39-35.58,9.26-70.7,19.25-105,8.6-29.6,19.26-58.52,26.19-88.59C72.54,154.34,78.26,96.06,80,38.31q.5-16.65.5-33.31c0-5.79-9-5.8-9,0Z')
+								polyline.cls-2(points='33.88 1113.86 45.61 1132.07 63.82 1120.34')
+
 					.contentBottom01
 					.contentBottom02
-				//- .main.menuBox
-				//- 	.items
-				//- 		.floor
-				//- 		a.menuBtn.open( href="" )
-				//- 			.box
-				//- 				.ham
-				//- 					.line
-				//- 					.line
-				//- 					.line
-				//- 				p MENU
-				//- 		include ./includes/menu.pug	
+		article.menuFixHeight
+			.wrapper
+				.main
+					.items
+						.floor
+						a.menuBtn.open( href="" )
+							.box
+								.ham
+									.line
+									.line
+									.line
+								p MENU
+						include ./includes/menu.pug	
 
 
 		script(src="./js/menu.js")
+		script(src="./js/experience.js")

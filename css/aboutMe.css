@@ -14,7 +14,7 @@ a {
   display: block;
 }
 
-.wrapper .content section.information {
+section.information {
   padding: 5%;
   border: 5px solid #321f1f;
   border-radius: 20px;
@@ -23,13 +23,13 @@ a {
   position: relative;
 }
 @media only screen and (max-width: 768px) {
-  .wrapper .content section.information {
-    padding: 8%;
+  section.information {
+    padding: 25px;
     border: 3px solid #321f1f;
     border-radius: 15px;
   }
 }
-.wrapper .content section.information .dot {
+section.information .dot {
   width: 8px;
   height: 8px;
   background-color: #C5A951;
@@ -37,89 +37,118 @@ a {
   border-radius: 50%;
   position: absolute;
 }
-.wrapper .content section.information .dot:nth-of-type(1) {
+section.information .dot:nth-of-type(1) {
   top: 8px;
   left: 8px;
 }
-.wrapper .content section.information .dot:nth-of-type(2) {
+section.information .dot:nth-of-type(2) {
   top: 8px;
   right: 8px;
 }
-.wrapper .content section.information .dot:nth-of-type(3) {
+section.information .dot:nth-of-type(3) {
   bottom: 8px;
   left: 8px;
 }
-.wrapper .content section.information .dot:nth-of-type(4) {
+section.information .dot:nth-of-type(4) {
   bottom: 8px;
   right: 8px;
 }
 @media only screen and (max-width: 768px) {
-  .wrapper .content section.information .dot {
+  section.information .dot {
     width: 5px;
     height: 5px;
     border: 3px solid #321f1f;
   }
-  .wrapper .content section.information .dot:nth-of-type(1) {
+  section.information .dot:nth-of-type(1) {
     top: 6px;
     left: 6px;
   }
-  .wrapper .content section.information .dot:nth-of-type(2) {
+  section.information .dot:nth-of-type(2) {
     top: 6px;
     right: 6px;
   }
-  .wrapper .content section.information .dot:nth-of-type(3) {
+  section.information .dot:nth-of-type(3) {
     bottom: 6px;
     left: 6px;
   }
-  .wrapper .content section.information .dot:nth-of-type(4) {
+  section.information .dot:nth-of-type(4) {
     bottom: 6px;
     right: 6px;
   }
 }
-.wrapper .content section.information .left, .wrapper .content section.information .right {
+section.information .left, section.information .right {
   width: 50%;
   display: inline-block;
   vertical-align: top;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-@media only screen and (max-width: 768px) {
-  .wrapper .content section.information .left, .wrapper .content section.information .right {
+@media only screen and (max-width: 1240px) {
+  section.information .left, section.information .right {
     width: 100%;
   }
 }
-.wrapper .content section.information .left {
-  padding-right: 5%;
+section.information .left {
+  padding-right: 3%;
+  font-size: 0;
 }
-.wrapper .content section.information .left h3 {
+section.information .left h3 {
   font-size: 30px;
   line-height: 1.5;
   color: #321f1f;
   font-weight: 700;
 }
 @media only screen and (max-width: 768px) {
-  .wrapper .content section.information .left h3 {
+  section.information .left h3 {
     font-size: 22px;
   }
 }
-.wrapper .content section.information .left h4 {
+section.information .left h4 {
   font-size: 20px;
   line-height: 1.5;
   color: #321f1f;
   font-weight: 700;
 }
 @media only screen and (max-width: 768px) {
-  .wrapper .content section.information .left h4 {
+  section.information .left h4 {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 768px) {
-  .wrapper .content section.information .left {
+@media only screen and (max-width: 1240px) {
+  section.information .left {
     padding-right: 0;
-    padding-bottom: 5%;
+    padding-bottom: 15px;
   }
 }
-.wrapper .content section.information .center {
+@media only screen and (max-width: 640px) {
+  section.information .left {
+    text-align: center;
+  }
+}
+section.information .left .myFace {
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 640px) {
+  section.information .left .myFace {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+section.information .left .txt {
+  width: calc(100% - 100px);
+  display: inline-block;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 640px) {
+  section.information .left .txt {
+    width: 100%;
+  }
+}
+section.information .center {
   width: 5px;
   height: 80%;
   border-radius: 2.5px;
@@ -134,31 +163,106 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-@media only screen and (max-width: 768px) {
-  .wrapper .content section.information .center {
+@media only screen and (max-width: 1240px) {
+  section.information .center {
     width: 100%;
     height: 3px;
     border: 1.5px solid #321f1f;
     position: relative;
   }
 }
-.wrapper .content section.information .right {
+section.information .right {
   padding-left: 5%;
 }
-.wrapper .content section.information .right p {
+section.information .right p {
   font-size: 16px;
   line-height: 1.8;
   color: #321f1f;
   font-weight: 700;
 }
 @media only screen and (max-width: 768px) {
-  .wrapper .content section.information .right p {
+  section.information .right p {
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 768px) {
-  .wrapper .content section.information .right {
+@media only screen and (max-width: 1240px) {
+  section.information .right {
     padding-left: 0;
-    padding-top: 5%;
+    padding-top: 15px;
   }
+}
+
+section.skill .skillWrapper {
+  width: 80%;
+  margin: auto;
+  padding: 100px 0 50px 0;
+}
+section.skill .skillWrapper .swiper-container:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-image: url(../images/dashed.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+section.skill .skillWrapper .swiper-container .swiper-slide figure {
+  padding: 0 25%;
+}
+section.skill .skillWrapper .swiper-container .swiper-slide-active {
+  opacity: 1;
+}
+section.skill h3 {
+  font-size: 30px;
+  line-height: 1.5;
+  color: #321f1f;
+  font-weight: 700;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  section.skill h3 {
+    font-size: 22px;
+  }
+}
+
+.head .myHead {
+  width: 16%;
+  position: absolute;
+  bottom: 12%;
+  left: 0;
+}
+.head .myHead:before {
+  content: "";
+  display: block;
+  width: 15%;
+  padding-bottom: 19%;
+  background-image: url(../images/myHand.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  z-index: 10;
+}
+.head .myHead:after {
+  content: "";
+  display: block;
+  width: 15%;
+  padding-bottom: 19%;
+  background-image: url(../images/myHand.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 15px;
+  left: -10px;
+  z-index: 10;
+}
+.head .myHat {
+  width: 16%;
+  position: absolute;
+  bottom: 12%;
+  right: 0;
 }

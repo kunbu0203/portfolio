@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900");
+* {
+  font-family: "Quicksand", "Noto Sans TC", sans-serif;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+section {
+  position: relative;
+}
+section .txt {
+  position: absolute;
+}
+section figure {
+  position: absolute;
+}
+section .university figure.building {
+  width: calc((205 / 1240) * 100%);
+  top: 0;
+  right: 0;
+}
+section .university figure.tree {
+  width: calc((122 / 1240) * 100%);
+}
+section .clothingArtEditor figure.building {
+  width: calc((224 / 1240) * 100%);
+  top: 20%;
+  left: 0;
+}
+section .clothingArtEditor figure.tree {
+  width: calc((55 / 1240) * 100%);
+}
+section .webDesigner figure.building {
+  width: calc((365 / 1240) * 100%);
+  top: 40%;
+  right: 0;
+}
+section .webDesigner figure.tree {
+  width: calc((152 / 1240) * 100%);
+}
+section .digitalDesigner figure.building {
+  width: calc((341 / 1240) * 100%);
+  top: 60%;
+  left: 0;
+}
+section .digitalDesigner figure.tree {
+  width: calc((55 / 1240) * 100%);
+}
+section .arrowLine {
+  width: 80px;
+  margin: auto;
+}
+section .arrowLine .cls-1 {
+  fill: #321f1f;
+}
+section .arrowLine .cls-2 {
+  fill: none;
+  stroke: #321f1f;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 10px;
+}

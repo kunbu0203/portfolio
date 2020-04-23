@@ -4,14 +4,16 @@
 body
 	background-image: linear-gradient(#e8edec, #c9c9c9)
 	article
+		min-height: 100vh
+		min-height: calc(var(--vh, 1vh) * 100)
+		transition: .5s ease-in-out
+		position: relative
 		.wrapper
 			+wrapperStyle
 			.title
 				padding: 8% 5% 0
 				margin-bottom: -1px
-				// width: 100%
 				font-size: 0
-				// box-sizing: border-box
 				position: relative
 				+before
 					width: 100%
@@ -47,11 +49,11 @@ body
 				position: relative
 				border-radius: 5px
 				background-color: $floor
-				padding: 10%
-				margin-bottom: 20%
+				padding: 8%
+				margin-bottom: 14%
 				// box-sizing: border-box
-				+rwd(768px)
-					padding: 8%
+				// +rwd(768px)
+				// 	padding: 10%
 				+before
 					width: 100%
 					height: 100%
@@ -114,55 +116,107 @@ body
 						right: 16px
 						// display: none
 						// opacity: .5
-			// .menuBox
-			// 	width: 100%
-			// 	max-width: 125vh
-			// 	position: relative
-			// 	margin: auto
-			// 	transition: .7s ease-in-out
-			// 	.items
-			// 		position: relative
-			// 		.floor
-			// 			width: calc((650 / 1240) * 100%)
-			// 			padding-bottom: calc((650 / 1240) * 100%)
-			// 			position: relative
-			// 			transform: scaleY(0.5) rotateX(0deg)
-			// 			transform-origin: bottom
-			// 			margin: auto
-			// 			backface-visibility: hidden
-			// 			transition: .7s ease-in-out
-			// 			+before
-			// 				width: 100%
-			// 				height: 100%
-			// 				background-color: $floor
-			// 				border: 5px solid $brown
-			// 				border-radius: 5px
-			// 				background-image: url(../images/map.png)
-			// 				background-size: cover
-			// 				background-repeat: no-repeat
-			// 				background-color: $floor
-			// 				position: absolute
-			// 				transform: rotate(45deg)
-			// 				box-sizing: border-box
-			// 	+rwd(2400px)
-			// 		max-width: 115vh
-			// .main.itemHide
-			// 	.console-container,.bigCloud,.mountainCow,.mountainCableCar,.buildings,.one0one,.grove,.floorBottom01,.floorBottom02,.cars,.tree,.me
-			// 		opacity: 0
-			// .main.menuOpen
-			// 	.floor
-			// 		// padding-bottom: calc((600 / 1240) * 100%)
-			// 		transform: scaleY(0.5) rotateX(180deg)
-			// 	.menuBtn.open
-			// 		opacity: 0
-			// 	.menu
-			// 		transform: scaleY(1) rotateX(360deg)
-			// 		.wrapperMenu
-			// 			opacity: 1
+	article.menuFixHeight
+		width: 100%
+		height: 100vh
+		height: calc(var(--vh, 1vh) * 100)
+		position: fixed
+		bottom: 0
+		left: 0
+		overflow: hidden
+		z-index: 99
+		.wrapper
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			margin-bottom: -2vh
+			transition: .7s ease-in-out
+			+rwd(768px)
+				width: 130%
+			+rwd(640px)
+				width: 150%
+			.main
+				width: 100%
+				max-width: 125vh
+				position: relative
+				margin: auto
+				transition: .7s ease-in-out
+				.items
+					position: relative
+					.floor
+						width: calc((450 / 1240) * 100%)
+						padding-bottom: calc((450 / 1240) * 100%)
+						position: relative
+						transform: scaleY(0.4) rotateX(0deg)
+						transform-origin: bottom
+						margin: auto
+						backface-visibility: hidden
+						transition: .7s ease-in-out
+						+before
+							width: 100%
+							height: 100%
+							background-color: $floor
+							border: 8px solid $brown
+							border-radius: 8px
+							background-image: url(../images/map.png)
+							background-size: cover
+							background-repeat: no-repeat
+							background-color: $floor
+							position: absolute
+							transform: rotate(45deg)
+							box-sizing: border-box
+					a.menuBtn.open
+						bottom: 15%
+				+rwd(2400px)
+					max-width: 115vh
+
+// menu打開過場樣式---------------start---------------
+body.itemHide
+	article
+		.bannerWrapper
+			section.banner
+				.main
+					.console-container,.bigCloud,.mountainCow,.mountainCableCar,.buildings,.one0one,.grove,.floorBottom01,.floorBottom02,.cars,.tree,.me
+						opacity: 0
+	article.hide
+		opacity: 0
+body.menuOpen
+	article
+		.bannerWrapper
+			section.banner
+				.main
+					margin-top: 0
+					.floor
+						// padding-bottom: calc((600 / 1240) * 100%)
+						transform: scaleY(0.5) rotateX(180deg)
+					.menuBtn.open
+						opacity: 0
+					.menu
+						transform: scaleY(1) rotateX(360deg)
+						.wrapperMenu
+							opacity: 1
+	article.menuFixHeight
+		.wrapper
+			// margin-top: 0
+			margin-bottom: 50vh
+			transform: translate(-50% ,50%)
+			.main
+				.items
+					.floor
+						// padding-bottom: calc((600 / 1240) * 100%)
+						transform: scaleY(0.5) rotateX(180deg)
+					.menuBtn.open
+						opacity: 0
+					.menu
+						transform: scaleY(1) rotateX(360deg)
+						.wrapperMenu
+							opacity: 1
+// menu打開過場樣式---------------end---------------
 
 
 
-// menu樣式---------------start---------------
+// 全站menu樣式---------------end---------------
 .menu
 	width: calc((850 / 1240) * 100%)
 	padding-bottom: calc((850 / 1240) * 100%)
@@ -234,7 +288,9 @@ body
 						width: 30px
 				#experience
 					bottom: 15%
+// 全站menu樣式---------------end---------------
 
+// 全站button樣式---------------start---------------
 a.menuBtn
 	width: 240px
 	display: block
@@ -324,3 +380,4 @@ a.menuBtn
 						transform: translateY(6px)
 	+rwd(640px)
 		width: 140px
+// 全站button樣式---------------end---------------

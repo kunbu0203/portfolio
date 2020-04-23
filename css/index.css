@@ -58,14 +58,20 @@ a {
             transform: translateX(0px);
   }
 }
-article section.banner {
+article {
   width: 100%;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
   overflow: hidden;
 }
-article section.banner .wrapper {
+article .bannerWrapper {
+  width: 70%;
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,7 +79,32 @@ article section.banner .wrapper {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-article section.banner .wrapper .main {
+@media only screen and (max-width: 2400px) {
+  article .bannerWrapper {
+    max-width: 1040px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  article .bannerWrapper {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  article .bannerWrapper {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  article .bannerWrapper {
+    width: 130%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  article .bannerWrapper {
+    width: 150%;
+  }
+}
+article .bannerWrapper section.banner .main {
   width: 100%;
   max-width: 125vh;
   position: relative;
@@ -82,7 +113,23 @@ article section.banner .wrapper .main {
   -o-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
 }
-article section.banner .wrapper .main .console-container {
+@media only screen and (max-width: 2400px) {
+  article .bannerWrapper section.banner .main {
+    max-width: 115vh;
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  article .bannerWrapper section.banner .main {
+    margin-top: 7%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  article .bannerWrapper section.banner .main {
+    margin-top: 25%;
+  }
+}
+article .bannerWrapper section.banner .main .console-container {
   width: 100%;
   font-size: 52px;
   color: #321f1f;
@@ -91,17 +138,40 @@ article section.banner .wrapper .main .console-container {
   top: -13%;
   left: 0;
 }
-article section.banner .wrapper .main .console-container span {
+@media only screen and (max-width: 1400px) {
+  article .bannerWrapper section.banner .main .console-container {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  article .bannerWrapper section.banner .main .console-container {
+    text-align: center;
+    width: 70%;
+    top: -20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 640px) {
+  article .bannerWrapper section.banner .main .console-container {
+    font-size: 30px;
+    width: 65%;
+    top: -35%;
+  }
+}
+article .bannerWrapper section.banner .main .console-container span {
   line-height: 1.2;
 }
-article section.banner .wrapper .main .console-underscore {
+article .bannerWrapper section.banner .main .console-underscore {
   display: inline-block;
   font-family: "Noto Sans TC", sans-serif;
 }
-article section.banner .wrapper .main .hidden {
+article .bannerWrapper section.banner .main .hidden {
   opacity: 0;
 }
-article section.banner .wrapper .main .bigCloud, article section.banner .wrapper .main .mountainCow, article section.banner .wrapper .main .mountainCableCar {
+article .bannerWrapper section.banner .main .bigCloud, article .bannerWrapper section.banner .main .mountainCow, article .bannerWrapper section.banner .main .mountainCableCar {
   width: 50%;
   -webkit-transform: skewY(-26.5deg);
       -ms-transform: skewY(-26.5deg);
@@ -113,7 +183,7 @@ article section.banner .wrapper .main .bigCloud, article section.banner .wrapper
   top: 9%;
   left: 0;
 }
-article section.banner .wrapper .main .buildings, article section.banner .wrapper .main .one0one, article section.banner .wrapper .main .grove {
+article .bannerWrapper section.banner .main .buildings, article .bannerWrapper section.banner .main .one0one, article .bannerWrapper section.banner .main .grove {
   width: 50%;
   -webkit-transform: skewY(26.5deg);
       -ms-transform: skewY(26.5deg);
@@ -125,7 +195,7 @@ article section.banner .wrapper .main .buildings, article section.banner .wrappe
   top: 9%;
   right: 0;
 }
-article section.banner .wrapper .main .floorBottom01, article section.banner .wrapper .main .floorBottom02 {
+article .bannerWrapper section.banner .main .floorBottom01, article .bannerWrapper section.banner .main .floorBottom02 {
   width: calc((850 / 1240) * 100%);
   padding-bottom: calc((850 / 1240) * 100%);
   position: absolute;
@@ -138,7 +208,7 @@ article section.banner .wrapper .main .floorBottom01, article section.banner .wr
       -ms-transform-origin: bottom;
           transform-origin: bottom;
 }
-article section.banner .wrapper .main .floorBottom01:before, article section.banner .wrapper .main .floorBottom02:before {
+article .bannerWrapper section.banner .main .floorBottom01:before, article .bannerWrapper section.banner .main .floorBottom02:before {
   content: "";
   display: block;
   width: 100%;
@@ -154,22 +224,22 @@ article section.banner .wrapper .main .floorBottom01:before, article section.ban
           box-sizing: border-box;
 }
 @media only screen and (max-width: 768px) {
-  article section.banner .wrapper .main .floorBottom01:before, article section.banner .wrapper .main .floorBottom02:before {
+  article .bannerWrapper section.banner .main .floorBottom01:before, article .bannerWrapper section.banner .main .floorBottom02:before {
     border: 4px solid #321f1f;
   }
 }
-article section.banner .wrapper .main .floorBottom02 {
+article .bannerWrapper section.banner .main .floorBottom02 {
   bottom: -4%;
 }
-article section.banner .wrapper .main .console-container, article section.banner .wrapper .main .bigCloud, article section.banner .wrapper .main .mountainCow, article section.banner .wrapper .main .mountainCableCar, article section.banner .wrapper .main .buildings, article section.banner .wrapper .main .one0one, article section.banner .wrapper .main .grove, article section.banner .wrapper .main .floorBottom01, article section.banner .wrapper .main .floorBottom02, article section.banner .wrapper .main .cars, article section.banner .wrapper .main .tree, article section.banner .wrapper .main .me {
+article .bannerWrapper section.banner .main .console-container, article .bannerWrapper section.banner .main .bigCloud, article .bannerWrapper section.banner .main .mountainCow, article .bannerWrapper section.banner .main .mountainCableCar, article .bannerWrapper section.banner .main .buildings, article .bannerWrapper section.banner .main .one0one, article .bannerWrapper section.banner .main .grove, article .bannerWrapper section.banner .main .floorBottom01, article .bannerWrapper section.banner .main .floorBottom02, article .bannerWrapper section.banner .main .cars, article .bannerWrapper section.banner .main .tree, article .bannerWrapper section.banner .main .me {
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-article section.banner .wrapper .main .items {
+article .bannerWrapper section.banner .main .items {
   position: relative;
 }
-article section.banner .wrapper .main .items .floor {
+article .bannerWrapper section.banner .main .items .floor {
   width: calc((850 / 1240) * 100%);
   padding-bottom: calc((850 / 1240) * 100%);
   position: relative;
@@ -185,7 +255,7 @@ article section.banner .wrapper .main .items .floor {
   -o-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
 }
-article section.banner .wrapper .main .items .floor:before {
+article .bannerWrapper section.banner .main .items .floor:before {
   content: "";
   display: block;
   width: 100%;
@@ -206,19 +276,19 @@ article section.banner .wrapper .main .items .floor:before {
           box-sizing: border-box;
 }
 @media only screen and (max-width: 768px) {
-  article section.banner .wrapper .main .items .floor:before {
+  article .bannerWrapper section.banner .main .items .floor:before {
     border: 4px solid #321f1f;
   }
 }
-article section.banner .wrapper .main .items .cars {
+article .bannerWrapper section.banner .main .items .cars {
   width: calc((90 / 1240) * 100%);
   position: absolute;
 }
-article section.banner .wrapper .main .items .tree {
+article .bannerWrapper section.banner .main .items .tree {
   width: calc((60 / 1240) * 100%);
   position: absolute;
 }
-article section.banner .wrapper .main .items .left {
+article .bannerWrapper section.banner .main .items .left {
   -webkit-transform: skewY(-26.5deg);
       -ms-transform: skewY(-26.5deg);
           transform: skewY(-26.5deg);
@@ -226,7 +296,7 @@ article section.banner .wrapper .main .items .left {
       -ms-transform-origin: left;
           transform-origin: left;
 }
-article section.banner .wrapper .main .items .right {
+article .bannerWrapper section.banner .main .items .right {
   -webkit-transform: skewY(26.5deg);
       -ms-transform: skewY(26.5deg);
           transform: skewY(26.5deg);
@@ -234,34 +304,34 @@ article section.banner .wrapper .main .items .right {
       -ms-transform-origin: right;
           transform-origin: right;
 }
-article section.banner .wrapper .main .items .cars.left {
+article .bannerWrapper section.banner .main .items .cars.left {
   bottom: 40%;
   left: 31%;
 }
-article section.banner .wrapper .main .items .cars.left figure {
+article .bannerWrapper section.banner .main .items .cars.left figure {
   -webkit-animation: drive 5s infinite linear;
   animation: drive 5s infinite linear;
 }
-article section.banner .wrapper .main .items .tree.left {
+article .bannerWrapper section.banner .main .items .tree.left {
   bottom: 20%;
   left: 20%;
 }
-article section.banner .wrapper .main .items .tree.right {
+article .bannerWrapper section.banner .main .items .tree.right {
   bottom: 40%;
   left: 63%;
   -webkit-transform: skewY(26.5deg) scale(0.8);
       -ms-transform: skewY(26.5deg) scale(0.8);
           transform: skewY(26.5deg) scale(0.8);
 }
-article section.banner .wrapper .main .items .cars.right {
+article .bannerWrapper section.banner .main .items .cars.right {
   bottom: 20%;
   left: 75%;
 }
-article section.banner .wrapper .main .items .cars.right figure {
+article .bannerWrapper section.banner .main .items .cars.right figure {
   -webkit-animation: drive 5.5s -1s infinite linear;
   animation: drive 5.5s -1s infinite linear;
 }
-article section.banner .wrapper .main .items .me {
+article .bannerWrapper section.banner .main .items .me {
   width: calc((360 / 1240) * 100%);
   position: absolute;
   top: 2%;
@@ -270,71 +340,8 @@ article section.banner .wrapper .main .items .me {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-@media only screen and (max-width: 2400px) {
-  article section.banner .wrapper .main {
-    max-width: 115vh;
-    margin-top: 10%;
-  }
-  article section.banner .wrapper .main .console-container {
-    font-size: 46px;
-    top: -15%;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  article section.banner .wrapper .main {
-    margin-top: 7%;
-  }
-  article section.banner .wrapper .main .console-container {
-    font-size: 36px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  article section.banner .wrapper {
-    width: 130%;
-  }
-  article section.banner .wrapper .main .console-container {
-    text-align: center;
-    width: 70%;
-    top: -20%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
 @media only screen and (max-width: 640px) {
-  article section.banner .wrapper {
-    width: 150%;
-  }
-  article section.banner .wrapper .main {
-    margin-top: 25%;
-  }
-  article section.banner .wrapper .main .console-container {
-    font-size: 30px;
-    width: 65%;
-    top: -35%;
-  }
-  article section.banner .wrapper .main .items .me {
+  article .bannerWrapper section.banner .main .items .me {
     top: 0;
   }
-}
-article section.banner .wrapper .main.itemHide .console-container, article section.banner .wrapper .main.itemHide .bigCloud, article section.banner .wrapper .main.itemHide .mountainCow, article section.banner .wrapper .main.itemHide .mountainCableCar, article section.banner .wrapper .main.itemHide .buildings, article section.banner .wrapper .main.itemHide .one0one, article section.banner .wrapper .main.itemHide .grove, article section.banner .wrapper .main.itemHide .floorBottom01, article section.banner .wrapper .main.itemHide .floorBottom02, article section.banner .wrapper .main.itemHide .cars, article section.banner .wrapper .main.itemHide .tree, article section.banner .wrapper .main.itemHide .me {
-  opacity: 0;
-}
-article section.banner .wrapper .main.menuOpen {
-  margin-top: 0;
-}
-article section.banner .wrapper .main.menuOpen .floor {
-  -webkit-transform: scaleY(0.5) rotateX(180deg);
-          transform: scaleY(0.5) rotateX(180deg);
-}
-article section.banner .wrapper .main.menuOpen .menuBtn.open {
-  opacity: 0;
-}
-article section.banner .wrapper .main.menuOpen .menu {
-  -webkit-transform: scaleY(1) rotateX(360deg);
-          transform: scaleY(1) rotateX(360deg);
-}
-article section.banner .wrapper .main.menuOpen .menu .wrapperMenu {
-  opacity: 1;
 }

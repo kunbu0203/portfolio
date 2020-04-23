@@ -2,93 +2,167 @@
 @import "var.sass"
 
 
-
-article
-.wrapper
-	// position: relative
-	.content
-		section.information
-			padding: 5%
-			border: 5px solid $brown
-			border-radius: 20px
-			background-color: #fff
-			font-size: 0
+section.information
+	padding: 5%
+	border: 5px solid $brown
+	border-radius: 20px
+	background-color: #fff
+	font-size: 0
+	position: relative
+	+rwd(768px)
+		padding: 25px
+		border: 3px solid $brown
+		border-radius: 15px
+	.dot
+		width: 8px
+		height: 8px
+		background-color: #C5A951
+		border: 4px solid $brown
+		border-radius: 50%
+		position: absolute
+		&:nth-of-type(1)
+			top: 8px
+			left: 8px
+		&:nth-of-type(2)
+			top: 8px
+			right: 8px
+		&:nth-of-type(3)
+			bottom: 8px
+			left: 8px
+		&:nth-of-type(4)
+			bottom: 8px
+			right: 8px
+		+rwd(768px)
+			width: 5px
+			height: 5px
+			border: 3px solid $brown
+			&:nth-of-type(1)
+				top: 6px
+				left: 6px
+			&:nth-of-type(2)
+				top: 6px
+				right: 6px
+			&:nth-of-type(3)
+				bottom: 6px
+				left: 6px
+			&:nth-of-type(4)
+				bottom: 6px
+				right: 6px
+	.left,.right
+		width: 50%
+		display: inline-block
+		vertical-align: top
+		box-sizing: border-box
+		+rwd(1240px)
+			width: 100%
+	.left
+		padding-right: 3%
+		font-size: 0
+		h3
+			+fontH3
+		h4
+			+fontH4
+		+rwd(1240px)
+			padding-right: 0
+			padding-bottom: 15px
+		+rwd(640px)
+			text-align: center
+		.myFace
+			width: 80px
+			border-radius: 50%
+			margin-right: 20px
+			display: inline-block
+			vertical-align: middle
+			+rwd(640px)
+				margin-right: 0
+				margin-bottom: 10px
+		.txt
+			width: calc(100% - 100px)
+			display: inline-block
+			vertical-align: middle
+			+rwd(640px)
+				width: 100%
+	.center
+		width: 5px
+		height: 80%
+		border-radius: 2.5px
+		border: 2.5px solid $brown
+		background-color: $brown
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		box-sizing: border-box
+		+rwd(1240px)
+			width: 100%
+			height: 3px
+			border: 1.5px solid $brown
 			position: relative
-			+rwd(768px)
-				padding: 8%
-				border: 3px solid $brown
-				border-radius: 15px
-			.dot
-				width: 8px
-				height: 8px
-				background-color: #C5A951
-				border: 4px solid $brown
-				border-radius: 50%
-				position: absolute
-				&:nth-of-type(1)
-					top: 8px
-					left: 8px
-				&:nth-of-type(2)
-					top: 8px
-					right: 8px
-				&:nth-of-type(3)
-					bottom: 8px
-					left: 8px
-				&:nth-of-type(4)
-					bottom: 8px
-					right: 8px
-				+rwd(768px)
-					width: 5px
-					height: 5px
-					border: 3px solid $brown
-					&:nth-of-type(1)
-						top: 6px
-						left: 6px
-					&:nth-of-type(2)
-						top: 6px
-						right: 6px
-					&:nth-of-type(3)
-						bottom: 6px
-						left: 6px
-					&:nth-of-type(4)
-						bottom: 6px
-						right: 6px
-			.left,.right
-				width: 50%
-				display: inline-block
-				vertical-align: top
-				box-sizing: border-box
-				+rwd(768px)
-					width: 100%
-			.left
-				padding-right: 5%
-				h3
-					+fontH3
-				h4
-					+fontH4
-				+rwd(768px)
-					padding-right: 0
-					padding-bottom: 5%
-			.center
-				width: 5px
-				height: 80%
-				border-radius: 2.5px
-				border: 2.5px solid $brown
-				background-color: $brown
+	.right
+		padding-left: 5%
+		p
+			+fontP
+		+rwd(1240px)
+			padding-left: 0
+			padding-top: 15px
+section.skill
+	// height: 20vh
+	// position: relative
+	.skillWrapper
+		width: 80%
+		margin: auto
+		padding: 100px 0 50px 0
+		.swiper-container
+			// position: relative
+			+before
+				width: 100%
+				height: 3px
+				background-image: url(../images/dashed.png)
+				background-repeat: no-repeat
+				background-size: cover
 				position: absolute
 				top: 50%
-				left: 50%
-				transform: translate(-50%, -50%)
-				box-sizing: border-box
-				+rwd(768px)
-					width: 100%
-					height: 3px
-					border: 1.5px solid $brown
-					position: relative
-			.right
-				padding-left: 5%
-				p
-					+fontP
-				+rwd(768px)
-					padding-left: 0
-					padding-top: 5%
+				left: 0
+				// z-index: 10
+			.swiper-slide
+				// padding: 5%
+				// opacity: 0.5
+				figure
+					padding: 0 25%
+					// min-width: 100px
+			.swiper-slide-active
+				opacity: 1
+	h3
+		+fontH3
+		text-align: center
+.head
+	.myHead
+		width: 16%
+		position: absolute
+		bottom: 12%
+		left: 0
+		+before
+			width: 15%
+			padding-bottom: 19%
+			background-image: url(../images/myHand.png)
+			background-repeat: no-repeat
+			background-size: contain
+			position: absolute
+			top: 15px
+			left: -10px
+			z-index: 10
+		+after
+			width: 15%
+			padding-bottom: 19%
+			background-image: url(../images/myHand.png)
+			background-repeat: no-repeat
+			background-size: contain
+			position: absolute
+			bottom: 15px
+			left: -10px
+			z-index: 10
+	.myHat
+		width: 16%
+		position: absolute
+		bottom: 12%
+		right: 0

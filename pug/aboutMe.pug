@@ -5,12 +5,12 @@ html(lang="zh-Hant")
 		include ./includes/css_include.pug
 		//- link(rel="stylesheet" href="./css/scroll.css")
 		//- link(href='https://fonts.googleapis.com/css?family=Quicksand&display=swap', rel='stylesheet')
+		link(rel="stylesheet", href="./css/libs/swiper.min.css")
 		link(rel="stylesheet", href="./css/aboutMe.css")
 		//- link(rel="stylesheet", href="./css/menu.css")
-		script(src='./js/jquery-3.4.1.min.js')
-		//- link(rel="stylesheet", href="./css/product.css")
+		script(src='./js/libs/jquery-3.4.1.min.js')
 	body
-		article
+		article.hide
 			.wrapper
 				.title
 					figure
@@ -23,25 +23,72 @@ html(lang="zh-Hant")
 						.dot
 						.dot
 						.left
-							h3 彭 /25
-							h4 銘傳大學商品設計學系
+							figure.myFace
+								img(src="./images/myFace.png", alt="")
+							.txt
+								h3 彭 /25
+								h4 銘傳大學商品設計系
 						.center
 						.right
 							p 我是彭,畢業於銘傳大學商品設計學系(工業設計),求學時期覺得自己修圖能 力不足所以進入服裝網拍公司增進PHOTOSHOP與平面做圖能力,在打工的同 時接觸到一點程式而產生興趣,並自行報名網頁設計課程學習,畢業後順利 進入廣告公司開始接觸網頁設計的工作,主要工作內容為香港花旗銀行的網站維護。
 					section.skill
+						.skillWrapper
+							// Slider main container
+							.swiper-container
+								// Additional required wrapper
+								.swiper-wrapper
+									// Slides
+									.swiper-slide
+										figure
+											img(src="./images/skillHtml.png", alt="")
+									.swiper-slide
+										figure
+											img(src="./images/skillCss.png", alt="")
+									.swiper-slide
+										figure
+											img(src="./images/skillJavascript.png", alt="")
+									.swiper-slide
+										figure
+											img(src="./images/skillPug.png", alt="")
+									.swiper-slide
+										figure
+											img(src="./images/skillSass.png", alt="")
+									.swiper-slide
+										figure
+											img(src="./images/skillJquery.png", alt="")
+									.swiper-slide
+										figure
+											img(src="./images/skillPhotoshop.png", alt="")
+									.swiper-slide
+										figure
+											img(src="./images/skillIllustrator.png", alt="")
+									.swiper-slide
+										figure
+											img(src="./images/skillAnimate.png", alt="")
+						//- h3 HTML
+					.head
+						figure.myHead
+							img(src="./images/myHead.png", alt="")
+						figure.myHat
+							img(src="./images/myHat.png", alt="")
 					.contentBottom01
 					.contentBottom02
-				//- .main.menuBox
-				//- 	.items
-				//- 		.floor
-				//- 		a.menuBtn.open( href="" )
-				//- 			.box
-				//- 				.ham
-				//- 					.line
-				//- 					.line
-				//- 					.line
-				//- 				p MENU
-				//- 		include ./includes/menu.pug	
+		article.menuFixHeight
+			.wrapper
+				.main
+					.items
+						.floor
+						a.menuBtn.open( href="" )
+							.box
+								.ham
+									.line
+									.line
+									.line
+								p MENU
+						include ./includes/menu.pug	
 
 
+		script(src="./js/libs/swiper.min.js")
 		script(src="./js/menu.js")
+		script(src="./js/aboutMe.js")
+		

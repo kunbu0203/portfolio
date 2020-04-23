@@ -18,11 +18,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <link rel="stylesheet" href="./css/css_reset.css"/>
     <link rel="stylesheet" href="./css/common.css"/>
-    <link rel="stylesheet" href="./css/index.css"/>
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./css/portfolio.css"/>
+    <script src="./js/libs/jquery-3.4.1.min.js"></script>
   </head>
   <body>
-    <article>
+    <article class="hide">
       <div class="wrapper">
         <div class="title">
           <figure><img src="./images/portfolio.png" alt=""/></figure>
@@ -36,6 +36,42 @@
         </div>
       </div>
     </article>
+    <article class="menuFixHeight">
+      <div class="wrapper">
+        <div class="main">
+          <div class="items">
+            <div class="floor"></div><a class="menuBtn open" href="">
+              <div class="box">
+                <div class="ham">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+                <p>MENU</p>
+              </div></a>
+            <div class="menu">
+              <div class="wrapperMenu">
+                <div class="wrapperLocation"><a class="location" id="aboutMe" href="aboutMe.html">
+                    <figure><img src="./images/aboutMe.png" alt=""/></figure>
+                    <p>About Me</p></a><a class="location" id="portfolio" href="portfolio.html">
+                    <figure><img src="./images/portfolio.png" alt=""/></figure>
+                    <p>Portfolio</p></a><a class="location" id="experience" href="experience.html">
+                    <figure><img src="./images/experience.png" alt=""/></figure>
+                    <p>Experience</p></a></div><a class="menuBtn close" href="">
+                  <div class="box">
+                    <div class="ham">
+                      <div class="cross"></div>
+                      <div class="cross"></div>
+                    </div>
+                    <p>CLOSE</p>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
     <script src="./js/menu.js"></script>
+    <script src="./js/portfolio.js"></script>
   </body>
 </html>

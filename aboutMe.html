@@ -18,11 +18,12 @@
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <link rel="stylesheet" href="./css/css_reset.css"/>
     <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/libs/swiper.min.css"/>
     <link rel="stylesheet" href="./css/aboutMe.css"/>
-    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/libs/jquery-3.4.1.min.js"></script>
   </head>
   <body>
-    <article>
+    <article class="hide">
       <div class="wrapper">
         <div class="title">
           <figure><img src="./images/aboutMe.png" alt=""/></figure>
@@ -35,20 +36,101 @@
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="left">
-              <h3>彭 /25</h3>
-              <h4>銘傳大學商品設計學系</h4>
+              <figure class="myFace"><img src="./images/myFace.png" alt=""/></figure>
+              <div class="txt">
+                <h3>彭 /25</h3>
+                <h4>銘傳大學商品設計系</h4>
+              </div>
             </div>
             <div class="center"></div>
             <div class="right">
               <p>我是彭,畢業於銘傳大學商品設計學系(工業設計),求學時期覺得自己修圖能 力不足所以進入服裝網拍公司增進PHOTOSHOP與平面做圖能力,在打工的同 時接觸到一點程式而產生興趣,並自行報名網頁設計課程學習,畢業後順利 進入廣告公司開始接觸網頁設計的工作,主要工作內容為香港花旗銀行的網站維護。</p>
             </div>
           </section>
-          <section class="skill"></section>
+          <section class="skill">
+            <div class="skillWrapper">
+              <!-- Slider main container-->
+              <div class="swiper-container">
+                <!-- Additional required wrapper-->
+                <div class="swiper-wrapper">
+                  <!-- Slides-->
+                  <div class="swiper-slide">
+                    <figure><img src="./images/skillHtml.png" alt=""/></figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure><img src="./images/skillCss.png" alt=""/></figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure><img src="./images/skillJavascript.png" alt=""/></figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure><img src="./images/skillPug.png" alt=""/></figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure><img src="./images/skillSass.png" alt=""/></figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure><img src="./images/skillJquery.png" alt=""/></figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure><img src="./images/skillPhotoshop.png" alt=""/></figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure><img src="./images/skillIllustrator.png" alt=""/></figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure><img src="./images/skillAnimate.png" alt=""/></figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="head">
+            <figure class="myHead"><img src="./images/myHead.png" alt=""/></figure>
+            <figure class="myHat"><img src="./images/myHat.png" alt=""/></figure>
+          </div>
           <div class="contentBottom01"></div>
           <div class="contentBottom02"></div>
         </div>
       </div>
     </article>
+    <article class="menuFixHeight">
+      <div class="wrapper">
+        <div class="main">
+          <div class="items">
+            <div class="floor"></div><a class="menuBtn open" href="">
+              <div class="box">
+                <div class="ham">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+                <p>MENU</p>
+              </div></a>
+            <div class="menu">
+              <div class="wrapperMenu">
+                <div class="wrapperLocation"><a class="location" id="aboutMe" href="aboutMe.html">
+                    <figure><img src="./images/aboutMe.png" alt=""/></figure>
+                    <p>About Me</p></a><a class="location" id="portfolio" href="portfolio.html">
+                    <figure><img src="./images/portfolio.png" alt=""/></figure>
+                    <p>Portfolio</p></a><a class="location" id="experience" href="experience.html">
+                    <figure><img src="./images/experience.png" alt=""/></figure>
+                    <p>Experience</p></a></div><a class="menuBtn close" href="">
+                  <div class="box">
+                    <div class="ham">
+                      <div class="cross"></div>
+                      <div class="cross"></div>
+                    </div>
+                    <p>CLOSE</p>
+                  </div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <script src="./js/libs/swiper.min.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/aboutMe.js"></script>
   </body>
 </html>
