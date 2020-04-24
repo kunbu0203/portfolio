@@ -30,6 +30,8 @@ section .university figure.building {
 }
 section .university figure.tree {
   width: calc((122 / 1240) * 100%);
+  top: 5%;
+  left: 10%;
 }
 section .clothingArtEditor figure.building {
   width: calc((224 / 1240) * 100%);
@@ -38,6 +40,8 @@ section .clothingArtEditor figure.building {
 }
 section .clothingArtEditor figure.tree {
   width: calc((55 / 1240) * 100%);
+  top: 25%;
+  right: 10%;
 }
 section .webDesigner figure.building {
   width: calc((365 / 1240) * 100%);
@@ -46,6 +50,8 @@ section .webDesigner figure.building {
 }
 section .webDesigner figure.tree {
   width: calc((152 / 1240) * 100%);
+  top: 45%;
+  left: 20%;
 }
 section .digitalDesigner figure.building {
   width: calc((341 / 1240) * 100%);
@@ -54,6 +60,13 @@ section .digitalDesigner figure.building {
 }
 section .digitalDesigner figure.tree {
   width: calc((55 / 1240) * 100%);
+  top: 65%;
+  right: 10%;
+}
+section .digitalDesigner figure.lake {
+  width: calc((300 / 1240) * 100%);
+  bottom: 0;
+  right: 0;
 }
 section .arrowLine {
   width: 80px;

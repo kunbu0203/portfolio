@@ -125,12 +125,18 @@ body
 		left: 0
 		overflow: hidden
 		z-index: 99
+		+before
+			width: 100%
+			height: 100%
+			background-image: linear-gradient(#e8edec, #c9c9c9)
+			opacity: 0
+			transition: .5s ease-in-out
 		.wrapper
 			position: absolute
-			bottom: 0
+			bottom: 5%
 			left: 50%
-			transform: translateX(-50%)
-			margin-bottom: -2vh
+			transform: translate(-50%, 50%)
+			// margin-bottom: 2vh
 			transition: .7s ease-in-out
 			+rwd(768px)
 				width: 130%
@@ -149,7 +155,7 @@ body
 						padding-bottom: calc((450 / 1240) * 100%)
 						position: relative
 						transform: scaleY(0.4) rotateX(0deg)
-						transform-origin: bottom
+						transform-origin: center
 						margin: auto
 						backface-visibility: hidden
 						transition: .7s ease-in-out
@@ -167,47 +173,62 @@ body
 							transform: rotate(45deg)
 							box-sizing: border-box
 					a.menuBtn.open
-						bottom: 15%
+						bottom: 55%
+						transform: translate(-50%, 50%)
 				+rwd(2400px)
 					max-width: 115vh
 
 // menu打開過場樣式---------------start---------------
 body.itemHide
+	// 首頁
 	article
 		.bannerWrapper
 			section.banner
 				.main
-					.console-container,.bigCloud,.mountainCow,.mountainCableCar,.buildings,.one0one,.grove,.floorBottom01,.floorBottom02,.cars,.tree,.me
+					.console-container,.bigCloud,.mountainCow,.mountainCableCar,.buildings,.one0one,.grove,.floorBottom01,.floorBottom02,.cars,.tree,.me,.menuBtn.open
 						opacity: 0
+	// 內頁
 	article.hide
 		opacity: 0
+	article.menuFixHeight
+		+before
+			opacity: 1
+		.wrapper
+			.main
+				.items
+					.floor
+						width: calc((850 / 1240) * 100%)
+						padding-bottom: calc((850 / 1240) * 100%)
+					.menuBtn.open
+						opacity: 0
 body.menuOpen
+	//首頁
 	article
 		.bannerWrapper
 			section.banner
 				.main
 					margin-top: 0
 					.floor
-						// padding-bottom: calc((600 / 1240) * 100%)
 						transform: scaleY(0.5) rotateX(180deg)
-					.menuBtn.open
-						opacity: 0
 					.menu
 						transform: scaleY(1) rotateX(360deg)
 						.wrapperMenu
 							opacity: 1
+	// 內頁
+	article.hide
+		.wrapper
+			display: none
 	article.menuFixHeight
 		.wrapper
-			// margin-top: 0
-			margin-bottom: 50vh
-			transform: translate(-50% ,50%)
+			bottom: 50%
+			// margin-bottom: calc(var(--vh, 1vh) * 50)
+			// transform: translate(-50%, -50%)
 			.main
+				// margin-top: 50%
+				// transform: translateY(50%)
 				.items
 					.floor
-						// padding-bottom: calc((600 / 1240) * 100%)
 						transform: scaleY(0.5) rotateX(180deg)
-					.menuBtn.open
-						opacity: 0
 					.menu
 						transform: scaleY(1) rotateX(360deg)
 						.wrapperMenu
