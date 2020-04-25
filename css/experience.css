@@ -14,54 +14,179 @@ a {
   display: block;
 }
 
+@-webkit-keyframes drive {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  25% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  75% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes drive {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  25% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  75% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
 section {
   position: relative;
 }
-section .txt {
+section .txt, section figure {
+  width: calc((480 / 1240) * 100%);
   position: absolute;
 }
-section figure {
+section .txt .circle, section figure .circle {
+  width: 3%;
+  padding-bottom: 3%;
   position: absolute;
+  top: 0;
+  left: -15%;
+  border: 8px solid #321f1f;
+  border-radius: 50%;
+  background-color: #fff;
+}
+@media only screen and (max-width: 1040px) {
+  section .txt .circle, section figure .circle {
+    border: 6px solid #321f1f;
+  }
+}
+section .txt p, section figure p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #321f1f;
+  font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  section .txt p, section figure p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  section .txt p, section figure p {
+    font-size: 15px;
+  }
+}
+section .txt h4, section figure h4 {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #321f1f;
+  font-weight: 700;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 768px) {
+  section .txt h4, section figure h4 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  section .txt h4, section figure h4 {
+    font-size: 18px;
+  }
+}
+section .txt h4 span, section figure h4 span {
+  display: inline-block;
 }
 section .university figure.building {
   width: calc((205 / 1240) * 100%);
   top: 0;
-  right: 0;
+  right: 5%;
+}
+section .university .txt {
+  top: 15%;
+  right: 4.6%;
 }
 section .university figure.tree {
   width: calc((122 / 1240) * 100%);
   top: 5%;
-  left: 10%;
+  left: 20%;
 }
 section .clothingArtEditor figure.building {
   width: calc((224 / 1240) * 100%);
-  top: 20%;
+  top: 23%;
   left: 0;
+}
+section .clothingArtEditor figure.building img.car {
+  width: 60%;
+  position: absolute;
+  bottom: -10%;
+  right: -40%;
+  -webkit-animation: drive 4s infinite linear;
+  animation: drive 4s infinite linear;
+}
+section .clothingArtEditor .txt {
+  top: 30%;
+  right: 10%;
 }
 section .clothingArtEditor figure.tree {
   width: calc((55 / 1240) * 100%);
   top: 25%;
-  right: 10%;
+  right: 5%;
 }
 section .webDesigner figure.building {
   width: calc((365 / 1240) * 100%);
-  top: 40%;
+  top: 43%;
   right: 0;
+}
+section .webDesigner .txt {
+  top: 63%;
+  right: 7.6%;
 }
 section .webDesigner figure.tree {
   width: calc((152 / 1240) * 100%);
   top: 45%;
-  left: 20%;
+  left: 25%;
 }
 section .digitalDesigner figure.building {
   width: calc((341 / 1240) * 100%);
-  top: 60%;
-  left: 0;
+  top: 75%;
+  left: 10%;
+}
+section .digitalDesigner figure.building img.car {
+  width: 45%;
+  position: absolute;
+  bottom: -20%;
+  left: -25%;
+  -webkit-animation: drive 4s infinite linear;
+  animation: drive 4s infinite linear;
+}
+section .digitalDesigner .txt {
+  top: 80%;
+  right: 4.5%;
 }
 section .digitalDesigner figure.tree {
   width: calc((55 / 1240) * 100%);
-  top: 65%;
-  right: 10%;
+  top: 75%;
+  right: 7%;
 }
 section .digitalDesigner figure.lake {
   width: calc((300 / 1240) * 100%);
@@ -69,8 +194,25 @@ section .digitalDesigner figure.lake {
   right: 0;
 }
 section .arrowLine {
-  width: 80px;
+  width: calc((120 / 1240) * 100%);
   margin: auto;
+}
+@media only screen and (max-width: 1000px) {
+  section .arrowLine {
+    width: 10%;
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section .arrowLine {
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  section .arrowLine {
+    width: 25%;
+    margin: 0;
+  }
 }
 section .arrowLine .cls-1 {
   fill: #321f1f;

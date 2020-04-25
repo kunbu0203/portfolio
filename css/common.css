@@ -292,6 +292,24 @@ body article.menuFixHeight .wrapper .main .items .floor {
   -o-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
 }
+@media only screen and (max-width: 1040px) {
+  body article.menuFixHeight .wrapper .main .items .floor {
+    width: calc((650 / 1240) * 100%);
+    padding-bottom: calc((650 / 1240) * 100%);
+  }
+}
+@media only screen and (max-width: 768px) {
+  body article.menuFixHeight .wrapper .main .items .floor {
+    width: calc((450 / 1240) * 100%);
+    padding-bottom: calc((450 / 1240) * 100%);
+  }
+}
+@media only screen and (max-width: 480px) {
+  body article.menuFixHeight .wrapper .main .items .floor {
+    width: calc((600 / 1240) * 100%);
+    padding-bottom: calc((600 / 1240) * 100%);
+  }
+}
 body article.menuFixHeight .wrapper .main .items .floor:before {
   content: "";
   display: block;

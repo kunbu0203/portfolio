@@ -159,6 +159,15 @@ body
 						margin: auto
 						backface-visibility: hidden
 						transition: .7s ease-in-out
+						+rwd(1040px)
+							width: calc((650 / 1240) * 100%)
+							padding-bottom: calc((650 / 1240) * 100%)
+						+rwd(768px)
+							width: calc((450 / 1240) * 100%)
+							padding-bottom: calc((450 / 1240) * 100%)
+						+rwd(480px)
+							width: calc((600 / 1240) * 100%)
+							padding-bottom: calc((600 / 1240) * 100%)
 						+before
 							width: 100%
 							height: 100%

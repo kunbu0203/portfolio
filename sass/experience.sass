@@ -1,68 +1,121 @@
 @charset "utf-8"
 @import "var.sass"
 
++keyframes (drive)
+	0%
+		transform: translateX(0px)
+	25%
+		transform: translateX(10px)
+	50%
+		transform: translateX(0px)
+	75%
+		transform: translateX(-10px)
+	100%
+		transform: translateX(0px)
+
 
 section
 	position: relative
-	.txt
+	.txt,figure
+		width: calc((480 / 1240) * 100%)
 		position: absolute
 		.circle
-	figure
-		position: absolute
+			width: 3%
+			padding-bottom: 3%
+			position: absolute
+			top: 0
+			left: -15%
+			border: 8px solid $brown
+			border-radius: 50%
+			background-color: #fff
+			+rwd(1040px)
+				border: 6px solid $brown
+		p
+			+fontP()
+			+rwd(1040px)
+				font-size: 15px
+		h4
+			+fontH4()
+			line-height: 1.2
+			+rwd(1040px)
+				font-size: 18px
+			span
+				display: inline-block
 	.university
 		figure.building
 			width: calc((205 / 1240) * 100%)
 			top: 0
-			right: 0
-			img
+			right: 5%
+		.txt
+			top: 15%
+			right: 4.6%
 		figure.tree
 			width: calc((122 / 1240) * 100%)
 			top: 5%
-			left: 10%
-			img
+			left: 20%
 	.clothingArtEditor
 		figure.building
 			width: calc((224 / 1240) * 100%)
-			top: 20%
+			top: 23%
 			left: 0
-			img
-			img
+			img.car
+				width: 60%
+				position: absolute
+				bottom: -10%
+				right: -40%
+				+animation(drive 4s infinite linear)
+		.txt
+			top: 30%
+			right: 10%
 		figure.tree
 			width: calc((55 / 1240) * 100%)
 			top: 25%
-			right: 10%
-			img
+			right: 5%
 	.webDesigner
 		figure.building
 			width: calc((365 / 1240) * 100%)
-			top: 40%
+			top: 43%
 			right: 0
-			img
+		.txt
+			top: 63%
+			right: 7.6%
 		figure.tree
 			width: calc((152 / 1240) * 100%)
 			top: 45%
-			left: 20%
-			img
+			left: 25%
 	.digitalDesigner
 		figure.building
 			width: calc((341 / 1240) * 100%)
-			top: 60%
-			left: 0
-			img
-			img
+			top: 75%
+			left: 10%
+			img.car
+				width: 45%
+				position: absolute
+				bottom: -20%
+				left: -25%
+				+animation(drive 4s infinite linear)
+		.txt
+			top: 80%
+			right: 4.5%
 		figure.tree
 			width: calc((55 / 1240) * 100%)
-			top: 65%
-			right: 10%
-			img
-			img
+			top: 75%
+			right: 7%
 		figure.lake
 			width: calc((300 / 1240) * 100%)
 			bottom: 0
 			right: 0
 	.arrowLine
-		width: 80px
+		width: calc((120 / 1240) * 100%)
 		margin: auto
+		+rwd(1000px)
+			width: 10%
+			margin-left: 5%
+		+rwd(768px)
+			width: 15%
+		+rwd(640px)
+			width: 25%
+			margin: 0
 		.cls-1
 			fill: $brown
 		.cls-2
