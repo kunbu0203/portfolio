@@ -112,18 +112,31 @@ section.skill
 		width: 80%
 		margin: auto
 		padding: 100px 0 50px 0
-		.swiper-container
-			// position: relative
-			+before
-				width: 100%
+		+rwd(1040px)
+			width: 70%
+		+rwd(640px)
+			width: 100%
+			padding: 50% 0
+		.lineBackground
+				width: 80%
 				height: 3px
 				background-image: url(../images/dashed.png)
 				background-repeat: no-repeat
 				background-size: cover
+				margin: auto
 				position: absolute
-				top: 50%
-				left: 0
+				top: 60%
+				left: 50%
+				transform: translateX(-50%)
+				+rwd(1040px)
+					width: 70%
+				+rwd(640px)
+					width: 53%
+					top: 50%
+					transform: translateX(-50%) rotate(90deg)
 				// z-index: 10
+		.swiper-container
+			position: relative
 			.swiper-slide
 				// padding: 5%
 				// opacity: 0.5
@@ -141,28 +154,43 @@ section.skill
 		position: absolute
 		bottom: 12%
 		left: 0
-		+before
-			width: 15%
-			padding-bottom: 19%
-			background-image: url(../images/myHand.png)
-			background-repeat: no-repeat
-			background-size: contain
-			position: absolute
-			top: 15px
-			left: -10px
-			z-index: 10
-		+after
-			width: 15%
-			padding-bottom: 19%
-			background-image: url(../images/myHand.png)
-			background-repeat: no-repeat
-			background-size: contain
-			position: absolute
-			bottom: 15px
-			left: -10px
-			z-index: 10
+		// +before
+		// 	width: 15%
+		// 	padding-bottom: 19%
+		// 	background-image: url(../images/myHand.png)
+		// 	background-repeat: no-repeat
+		// 	background-size: contain
+		// 	position: absolute
+		// 	top: 15px
+		// 	left: -10px
+		// 	z-index: 10
+		// +after
+		// 	width: 15%
+		// 	padding-bottom: 19%
+		// 	background-image: url(../images/myHand.png)
+		// 	background-repeat: no-repeat
+		// 	background-size: contain
+		// 	position: absolute
+		// 	bottom: 15px
+		// 	left: -10px
+		// 	z-index: 10
+		+rwd(1040px)
+			width: 20%
+		+rwd(640px)
+			width: 35%
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%) rotate(-90deg)
 	.myHat
 		width: 16%
 		position: absolute
 		bottom: 12%
 		right: 0
+		+rwd(1040px)
+			width: 20%
+		+rwd(640px)
+			width: 35%
+			bottom: 0
+			right: 50%
+			// padding-bottom: 75%
+			transform: translate(50%, -230%) rotate(-90deg)

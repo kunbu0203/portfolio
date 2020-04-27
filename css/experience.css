@@ -61,42 +61,58 @@ a {
 section {
   position: relative;
 }
-section .txt, section figure {
-  width: calc((480 / 1240) * 100%);
+section figure {
   position: absolute;
 }
-section .txt .circle, section figure .circle {
-  width: 3%;
-  padding-bottom: 3%;
+section .circle {
+  width: 7.5%;
   position: absolute;
   top: 0;
   left: -15%;
-  border: 8px solid #321f1f;
-  border-radius: 50%;
-  background-color: #fff;
 }
-@media only screen and (max-width: 1040px) {
-  section .txt .circle, section figure .circle {
-    border: 6px solid #321f1f;
+@media only screen and (max-width: 640px) {
+  section .circle {
+    width: 10%;
   }
 }
-section .txt p, section figure p {
+section .circle .cls-3 {
+  fill: #fff;
+  stroke: #321f1f;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 10px;
+}
+section .txt {
+  width: calc((480 / 1240) * 100%);
+  position: absolute;
+}
+@media only screen and (max-width: 1040px) {
+  section .txt {
+    width: 70%;
+  }
+}
+section .txt p {
   font-size: 16px;
   line-height: 1.8;
   color: #321f1f;
   font-weight: 700;
 }
 @media only screen and (max-width: 768px) {
-  section .txt p, section figure p {
+  section .txt p {
     font-size: 14px;
   }
 }
 @media only screen and (max-width: 1040px) {
-  section .txt p, section figure p {
+  section .txt p {
     font-size: 15px;
   }
 }
-section .txt h4, section figure h4 {
+@media only screen and (max-width: 768px) {
+  section .txt p {
+    font-size: 14px;
+  }
+}
+section .txt h4 {
   font-size: 20px;
   line-height: 1.5;
   color: #321f1f;
@@ -104,16 +120,21 @@ section .txt h4, section figure h4 {
   line-height: 1.2;
 }
 @media only screen and (max-width: 768px) {
-  section .txt h4, section figure h4 {
+  section .txt h4 {
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 1040px) {
-  section .txt h4, section figure h4 {
+  section .txt h4 {
     font-size: 18px;
   }
 }
-section .txt h4 span, section figure h4 span {
+@media only screen and (max-width: 768px) {
+  section .txt h4 {
+    font-size: 16px;
+  }
+}
+section .txt h4 span {
   display: inline-block;
 }
 section .university figure.building {
@@ -123,12 +144,29 @@ section .university figure.building {
 }
 section .university .txt {
   top: 15%;
-  right: 4.6%;
+  left: 56.7%;
 }
 section .university figure.tree {
   width: calc((122 / 1240) * 100%);
   top: 5%;
   left: 20%;
+}
+@media only screen and (max-width: 1040px) {
+  section .university .txt {
+    left: 24%;
+  }
+  section .university figure.tree {
+    left: 40%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  section .university figure.building {
+    width: 25%;
+  }
+  section .university .txt {
+    top: 10%;
+    left: 28.5%;
+  }
 }
 section .clothingArtEditor figure.building {
   width: calc((224 / 1240) * 100%);
@@ -145,12 +183,33 @@ section .clothingArtEditor figure.building img.car {
 }
 section .clothingArtEditor .txt {
   top: 30%;
-  right: 10%;
+  left: 51.5%;
 }
 section .clothingArtEditor figure.tree {
   width: calc((55 / 1240) * 100%);
   top: 25%;
   right: 5%;
+}
+@media only screen and (max-width: 1040px) {
+  section .clothingArtEditor figure.building {
+    left: 57%;
+  }
+  section .clothingArtEditor .txt {
+    left: 16%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  section .clothingArtEditor figure.building {
+    width: 28%;
+    left: 40%;
+  }
+  section .clothingArtEditor .txt {
+    top: 33.5%;
+    left: 10.3%;
+  }
+  section .clothingArtEditor figure.tree {
+    top: 21%;
+  }
 }
 section .webDesigner figure.building {
   width: calc((365 / 1240) * 100%);
@@ -159,12 +218,34 @@ section .webDesigner figure.building {
 }
 section .webDesigner .txt {
   top: 63%;
-  right: 7.6%;
+  left: 53.8%;
 }
 section .webDesigner figure.tree {
   width: calc((152 / 1240) * 100%);
   top: 45%;
   left: 25%;
+}
+@media only screen and (max-width: 1040px) {
+  section .webDesigner figure.building {
+    right: 5%;
+  }
+  section .webDesigner .txt {
+    top: 57%;
+    left: 17%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  section .webDesigner figure.building {
+    width: 42%;
+    top: 45%;
+  }
+  section .webDesigner .txt {
+    top: 55.5%;
+    left: 13%;
+  }
+  section .webDesigner figure.tree {
+    top: 47%;
+  }
 }
 section .digitalDesigner figure.building {
   width: calc((341 / 1240) * 100%);
@@ -181,7 +262,7 @@ section .digitalDesigner figure.building img.car {
 }
 section .digitalDesigner .txt {
   top: 80%;
-  right: 4.5%;
+  left: 57%;
 }
 section .digitalDesigner figure.tree {
   width: calc((55 / 1240) * 100%);
@@ -193,18 +274,32 @@ section .digitalDesigner figure.lake {
   bottom: 0;
   right: 0;
 }
+@media only screen and (max-width: 1040px) {
+  section .digitalDesigner figure.building {
+    top: 67%;
+    left: 40%;
+  }
+  section .digitalDesigner .txt {
+    left: 24.5%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  section .digitalDesigner figure.building {
+    width: 40%;
+  }
+  section .digitalDesigner .txt {
+    top: 78%;
+    left: 26.3%;
+  }
+}
 section .arrowLine {
   width: calc((120 / 1240) * 100%);
   margin: auto;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1040px) {
   section .arrowLine {
     width: 10%;
     margin-left: 5%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  section .arrowLine {
     width: 15%;
   }
 }

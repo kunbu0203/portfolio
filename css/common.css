@@ -19,9 +19,11 @@ body {
   background-image: -o-linear-gradient(#e8edec, #c9c9c9);
   background-image: linear-gradient(#e8edec, #c9c9c9);
 }
-body article {
+body .hide {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
+}
+body article {
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -129,7 +131,12 @@ body article .wrapper .content {
   border-radius: 5px;
   background-color: #EDEDED;
   padding: 8%;
-  margin-bottom: 14%;
+  margin-bottom: 12%;
+}
+@media only screen and (max-width: 640px) {
+  body article .wrapper .content {
+    margin-bottom: 30%;
+  }
 }
 body article .wrapper .content:before {
   content: "";
@@ -222,8 +229,8 @@ body article .wrapper .content .contentBottom02 {
 }
 body article.menuFixHeight {
   width: 100%;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: 18vh;
+  height: calc(var(--vh, 1vh) * 18);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -245,7 +252,7 @@ body article.menuFixHeight:before {
 }
 body article.menuFixHeight .wrapper {
   position: absolute;
-  bottom: 5%;
+  bottom: 25%;
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
       -ms-transform: translate(-50%, 50%);
@@ -275,6 +282,9 @@ body article.menuFixHeight .wrapper .main {
 }
 body article.menuFixHeight .wrapper .main .items {
   position: relative;
+}
+body article.menuFixHeight .wrapper .main .items:hover {
+  pointer-events: auto;
 }
 body article.menuFixHeight .wrapper .main .items .floor {
   width: calc((450 / 1240) * 100%);
@@ -347,10 +357,9 @@ body.itemHide article .bannerWrapper section.banner .main .console-container, bo
 body.itemHide article.hide {
   opacity: 0;
 }
-body.itemHide article.menuFixHeight:before {
-  content: "";
-  display: block;
-  opacity: 1;
+body.itemHide article.menuFixHeight {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 body.itemHide article.menuFixHeight .wrapper .main .items .floor {
   width: calc((850 / 1240) * 100%);
@@ -483,23 +492,24 @@ body.menuOpen article.menuFixHeight .wrapper .main .items .menu .wrapperMenu {
     font-size: 20px;
   }
 }
-.menu .wrapperMenu .wrapperLocation #aboutMe {
-  top: 10%;
+.menu .wrapperMenu .wrapperLocation #index {
+  top: 5%;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+.menu .wrapperMenu .wrapperLocation #aboutMe {
+  top: 35%;
+  left: 2%;
+}
 .menu .wrapperMenu .wrapperLocation #portfolio {
-  top: 50%;
+  top: 48%;
   right: 0;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 .menu .wrapperMenu .wrapperLocation #experience {
   bottom: 10%;
-  left: 10%;
+  left: 25%;
 }
 @media only screen and (max-width: 2400px) {
   .menu .wrapperMenu .wrapperLocation .location figure {
@@ -515,8 +525,14 @@ body.menuOpen article.menuFixHeight .wrapper .main .items .menu .wrapperMenu {
   .menu .wrapperMenu .wrapperLocation .location figure {
     width: 30px;
   }
-  .menu .wrapperMenu .wrapperLocation #experience {
-    bottom: 15%;
+  .menu .wrapperMenu .wrapperLocation #aboutMe {
+    top: 33%;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .menu .wrapperMenu .wrapperLocation #portfolio {
+    right: -5%;
   }
 }
 

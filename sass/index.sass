@@ -28,12 +28,16 @@ article
 		+rwd(640px)
 			width: 150%
 		section.banner
+			width: 100%
+			height: 100%
 			.main
 				width: 100%
+				height: 100%
 				max-width: 125vh
 				position: relative
 				margin: auto
 				transition: .7s ease-in-out
+				pointer-events: auto !important
 				+rwd(2400px)
 					max-width: 115vh
 					margin-top: 10%
@@ -41,6 +45,14 @@ article
 					margin-top: 7%
 				+rwd(640px)
 					margin-top: 25%
+				.itemWrapper,.backWrapper
+					width: 100%
+					height: 100%
+					position: relative
+				.itemWrapper
+					z-index: 50
+				.backWrapper
+					z-index: 10
 				.console-container
 					width: 100%
 					font-size: 52px
@@ -73,15 +85,17 @@ article
 					transform: skewY(-26.5deg)
 					transform-origin: left
 					position: absolute
-					top: 9%
+					top: 9.5%
 					left: 0
 				.buildings,.one0one,.grove
 					width: 50%
 					transform: skewY(26.5deg)
 					transform-origin: right
 					position: absolute
-					top: 9%
+					top: 9.5%
 					right: 0
+				.console-container,.bigCloud,.mountainCow,.mountainCableCar,.buildings,.one0one,.grove,.floorBottom01,.floorBottom02,.cars,.tree,.me
+					transition: .5s ease-in-out
 				.floorBottom01
 					width: calc((850 / 1240) * 100%)
 					padding-bottom: calc((850 / 1240) * 100%)
@@ -104,10 +118,9 @@ article
 				.floorBottom02
 					@extend .floorBottom01
 					bottom: -4%
-				.console-container,.bigCloud,.mountainCow,.mountainCableCar,.buildings,.one0one,.grove,.floorBottom01,.floorBottom02,.cars,.tree,.me
-					transition: .5s ease-in-out
 				.items
 					position: relative
+					z-index: 1
 					.floor
 						width: calc((850 / 1240) * 100%)
 						padding-bottom: calc((850 / 1240) * 100%)

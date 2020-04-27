@@ -13,65 +13,66 @@ html(lang="zh-Hant")
 		article
 			.bannerWrapper
 				section.banner
-					.main
-						.console-container Hi I'm
-							span#text 
-							#console.console-underscore _
-						.bigCloud
-							figure
-								img(src="./images/bigCloud.png", alt="")
-						.mountainCow
-							figure
-								img(src="./images/mountainCow.png", alt="")
-						.mountainCableCar
-							figure
-								img(src="./images/mountainCableCar.png", alt="")
-						.buildings
-							figure
-								img(src="./images/buildings.png", alt="")
-						.one0one
-							figure
-								img(src="./images/101.png", alt="")
-						.grove
-							figure
-								img(src="./images/grove.png", alt="")
-						.floorBottom01
-						.floorBottom02
-						.items
-							.floor
-							.cars.left
+					.main#scene(data-relative-input = "true")
+						.itemWrapper(data-depth = "0.2")
+							.items
+								.floor
+								.cars.left
+									figure
+										img(src="./images/carBlue01.png", alt="")
+								.tree.left
+									figure
+										img(src="./images/tree.png", alt="")
+								.tree.right
+									figure
+										img(src="./images/tree.png", alt="")
+								.cars.right
+									figure
+										img(src="./images/carRed02.png", alt="")
+								.me
+									figure
+										img(src="./images/me.png", alt="")
+								a.menuBtn.open( href="" )
+									.box
+										.ham
+											.line
+											.line
+											.line
+										p MENU
+								include ./includes/menu.pug
+							.floorBottom01
+							.floorBottom02
+						.backWrapper(data-depth = "0.2")
+							.console-container Hi I'm
+								span#text 
+								#console.console-underscore _
+						.backWrapper(data-depth = "0.5")
+							.bigCloud
 								figure
-									img(src="./images/carBlue01.png", alt="")
-							.tree.left
+									img(src="./images/bigCloud.png", alt="")
+						.backWrapper(data-depth = "0.4")
+							.mountainCow
 								figure
-									img(src="./images/tree.png", alt="")
-							.tree.right
+									img(src="./images/mountainCow.png", alt="")
+						.backWrapper(data-depth = "0.25")
+							.mountainCableCar
 								figure
-									img(src="./images/tree.png", alt="")
-							.cars.right
+									img(src="./images/mountainCableCar.png", alt="")
+						.backWrapper(data-depth = "0.5")
+							.buildings
 								figure
-									img(src="./images/carRed02.png", alt="")
-							.me
+									img(src="./images/buildings.png", alt="")
+						.backWrapper(data-depth = "0.4")
+							.one0one
 								figure
-									img(src="./images/me.png", alt="")
-							a.menuBtn.open( href="" )
-								.box
-									.ham
-										.line
-										.line
-										.line
-									p MENU
-							include ./includes/menu.pug
+									img(src="./images/101.png", alt="")
+						.backWrapper(data-depth = "0.25")
+							.grove
+								figure
+									img(src="./images/grove.png", alt="")
+							
         
 		include ./includes/footer.pug
-		//- include ./includes/js_include.pug
-		//- script(src="https://code.createjs.com/createjs-2015.11.26.min.js")
-		//- script(src="/assets/js/logo.js")
-		//- script(src="/assets/js/canvas.js")
-		//- script(src="/assets/js/libs/html2canvas.min.js")
-		//- script(src="/assets/js/libs/jquery.scrollbar.js")
-		//- script(src="/assets/js/libs/jquery.twzipcode.min.js")
-		//- script(src="/assets/js/index.js")
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js')
 		script(src="./js/index.js")
 		script(src="./js/menu.js")
-		//- script(src="/assets/js/product.js")

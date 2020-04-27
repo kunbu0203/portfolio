@@ -3,9 +3,10 @@
 
 body
 	background-image: linear-gradient(#e8edec, #c9c9c9)
-	article
+	.hide
 		min-height: 100vh
 		min-height: calc(var(--vh, 1vh) * 100)
+	article
 		transition: .5s ease-in-out
 		position: relative
 		.wrapper
@@ -50,7 +51,9 @@ body
 				border-radius: 5px
 				background-color: $floor
 				padding: 8%
-				margin-bottom: 14%
+				margin-bottom: 12%
+				+rwd(640px)
+					margin-bottom: 30%
 				// box-sizing: border-box
 				// +rwd(768px)
 				// 	padding: 10%
@@ -118,13 +121,14 @@ body
 						// opacity: .5
 	article.menuFixHeight
 		width: 100%
-		height: 100vh
-		height: calc(var(--vh, 1vh) * 100)
+		height: 18vh
+		height: calc(var(--vh, 1vh) * 18)
 		position: fixed
 		bottom: 0
 		left: 0
 		overflow: hidden
 		z-index: 99
+		// pointer-events: none
 		+before
 			width: 100%
 			height: 100%
@@ -133,7 +137,7 @@ body
 			transition: .5s ease-in-out
 		.wrapper
 			position: absolute
-			bottom: 5%
+			bottom: 25%
 			left: 50%
 			transform: translate(-50%, 50%)
 			// margin-bottom: 2vh
@@ -150,6 +154,8 @@ body
 				transition: .7s ease-in-out
 				.items
 					position: relative
+					&:hover
+						pointer-events: auto
 					.floor
 						width: calc((450 / 1240) * 100%)
 						padding-bottom: calc((450 / 1240) * 100%)
@@ -200,8 +206,10 @@ body.itemHide
 	article.hide
 		opacity: 0
 	article.menuFixHeight
-		+before
-			opacity: 1
+		height: 100vh
+		height: calc(var(--vh, 1vh) * 100)
+		// +before
+		// 	opacity: 1
 		.wrapper
 			.main
 				.items
@@ -293,17 +301,20 @@ body.menuOpen
 					+fontBtn()
 					line-height: 0.8
 					vertical-align: bottom
-			#aboutMe
-				top: 10%
+			#index
+				top: 5%
 				left: 50%
 				transform: translateX(-50%)
+			#aboutMe
+				top: 35%
+				left: 2%
 			#portfolio
-				top: 50%
+				top: 48%
 				right: 0
-				transform: translateY(-50%)
+				// transform: translateY(-50%)
 			#experience
 				bottom: 10%
-				left: 10%
+				left: 25%
 			+rwd(2400px)
 				.location
 					figure
@@ -316,8 +327,13 @@ body.menuOpen
 				.location
 					figure
 						width: 30px
-				#experience
-					bottom: 15%
+				#aboutMe
+					top: 33%
+					left: 0
+			+rwd(320px)
+				#portfolio
+					right: -5%
+
 // 全站menu樣式---------------end---------------
 
 // 全站button樣式---------------start---------------
