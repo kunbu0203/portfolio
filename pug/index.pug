@@ -7,7 +7,6 @@ html(lang="zh-Hant")
 		//- link(href='https://fonts.googleapis.com/css?family=Quicksand&display=swap', rel='stylesheet')
 		link(rel="stylesheet", href="./css/index.css")
 		//- link(rel="stylesheet", href="./css/menu.css")
-		script(src='./js/libs/jquery-3.4.1.min.js')
 	body
 		//- include ./includes/head.pug
 		article
@@ -72,7 +71,7 @@ html(lang="zh-Hant")
 									img(src="./images/grove.png", alt="")
 							
         
-		include ./includes/footer.pug
+		include ./includes/js_include.pug
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js')
+		script(src="./js/common.js")
 		script(src="./js/index.js")
-		script(src="./js/menu.js")

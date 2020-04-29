@@ -58,6 +58,12 @@ a {
             transform: translateX(0px);
   }
 }
+@media only screen and (max-width: 640px) {
+  body article.hide .wrapper .content {
+    margin-bottom: 25%;
+  }
+}
+
 section {
   position: relative;
 }
@@ -75,7 +81,7 @@ section .circle {
     width: 10%;
   }
 }
-section .circle .cls-3 {
+section .circle .cls-2 {
   fill: #fff;
   stroke: #321f1f;
   stroke-linecap: round;
@@ -309,10 +315,7 @@ section .arrowLine {
     margin: 0;
   }
 }
-section .arrowLine .cls-1 {
-  fill: #321f1f;
-}
-section .arrowLine .cls-2 {
+section .arrowLine .cls-1, section .arrowLine .cls-2 {
   fill: none;
   stroke: #321f1f;
   stroke-linecap: round;

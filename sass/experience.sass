@@ -12,8 +12,12 @@
 		transform: translateX(-10px)
 	100%
 		transform: translateX(0px)
-
-
+body
+	article.hide
+		.wrapper
+			.content
+				+rwd(640px)
+					margin-bottom: 25%
 section
 	position: relative
 	figure
@@ -25,7 +29,7 @@ section
 		left: -15%
 		+rwd(640px)
 			width: 10%
-		.cls-3
+		.cls-2
 			fill: #fff
 			stroke: #321f1f
 			stroke-linecap: round
@@ -177,11 +181,11 @@ section
 		+rwd(640px)
 			width: 25%
 			margin: 0
-		.cls-1
-			fill: $brown
-		.cls-2
+		.cls-1,.cls-2
 			fill: none
 			stroke: $brown
 			stroke-linecap: round
 			stroke-linejoin: round
 			stroke-width: 10px
+			// stroke-dasharray: 1000px
+			// stroke-dashoffset: 1000px
