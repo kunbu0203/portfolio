@@ -58,9 +58,13 @@ a {
             transform: translateX(0px);
   }
 }
+section, .arrowLine {
+  opacity: 0;
+}
+
 @media only screen and (max-width: 640px) {
-  body article.hide .wrapper .content {
-    margin-bottom: 25%;
+  body article.hide .wrapper {
+    padding-bottom: 25%;
   }
 }
 
@@ -108,32 +112,12 @@ section .txt p {
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 1040px) {
-  section .txt p {
-    font-size: 15px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  section .txt p {
-    font-size: 14px;
-  }
-}
 section .txt h4 {
   font-size: 20px;
   line-height: 1.5;
   color: #321f1f;
   font-weight: 700;
   line-height: 1.2;
-}
-@media only screen and (max-width: 768px) {
-  section .txt h4 {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 1040px) {
-  section .txt h4 {
-    font-size: 18px;
-  }
 }
 @media only screen and (max-width: 768px) {
   section .txt h4 {
@@ -147,6 +131,9 @@ section .university figure.building {
   width: calc((205 / 1240) * 100%);
   top: 0;
   right: 5%;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
 }
 section .university .txt {
   top: 15%;

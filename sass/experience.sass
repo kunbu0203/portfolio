@@ -12,12 +12,16 @@
 		transform: translateX(-10px)
 	100%
 		transform: translateX(0px)
+
+section,.arrowLine
+	opacity: 0
+
+
 body
 	article.hide
 		.wrapper
-			.content
-				+rwd(640px)
-					margin-bottom: 25%
+			+rwd(640px)
+				padding-bottom: 25%
 section
 	position: relative
 	figure
@@ -42,17 +46,17 @@ section
 			width: 70%
 		p
 			+fontP()
-			+rwd(1040px)
-				font-size: 15px
-			+rwd(768px)
-				font-size: 14px
+			// +rwd(1040px)
+			// 	font-size: 15px
+			// +rwd(768px)
+			// 	font-size: 14px
 		h4
 			+fontH4()
 			line-height: 1.2
-			+rwd(1040px)
-				font-size: 18px
-			+rwd(768px)
-				font-size: 16px
+			// +rwd(1040px)
+			// 	font-size: 18px
+			// +rwd(768px)
+			// 	font-size: 16px
 			span
 				display: inline-block
 	.university
@@ -60,6 +64,7 @@ section
 			width: calc((205 / 1240) * 100%)
 			top: 0
 			right: 5%	
+			transform-origin: bottom
 		.txt
 			top: 15%
 			left: 56.7%

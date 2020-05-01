@@ -14,9 +14,14 @@ a {
   display: block;
 }
 
+.word {
+  opacity: 0;
+}
+
 section .work {
   font-size: 0;
   margin-top: 8%;
+  position: relative;
 }
 @media only screen and (max-width: 768px) {
   section .work {
@@ -135,21 +140,25 @@ section .work .txt {
     padding: 10px 0 0 20px;
   }
 }
-section .work .txt p {
+section .work .txt p, section .work .txt li {
   font-size: 16px;
   line-height: 1.8;
   color: #321f1f;
   font-weight: 700;
 }
 @media only screen and (max-width: 768px) {
-  section .work .txt p {
+  section .work .txt p, section .work .txt li {
     font-size: 14px;
   }
 }
 @media only screen and (max-width: 1040px) {
-  section .work .txt p {
-    font-size: 15px;
+  section .work .txt p, section .work .txt li {
+    font-size: 14px;
   }
+}
+section .work .txt li {
+  list-style: disc;
+  margin-left: 20px;
 }
 section .work .txt h3 {
   font-size: 30px;
@@ -166,20 +175,69 @@ section .work .txt h3 {
 }
 @media only screen and (max-width: 1040px) {
   section .work .txt h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 section .work .txt h3 span {
   display: inline-block;
 }
-section .work .txt a.btn p {
+section .work a.btn .back, section .work a.btn .front {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 14px;
+}
+@media only screen and (max-width: 768px) {
+  section .work a.btn .back, section .work a.btn .front {
+    padding: 0 12px;
+  }
+}
+section .work a.btn .back p, section .work a.btn .front p {
   font-size: 16px;
   line-height: 1.8;
   color: #321f1f;
   font-weight: 700;
+  line-height: 2;
 }
 @media only screen and (max-width: 768px) {
-  section .work .txt a.btn p {
+  section .work a.btn .back p, section .work a.btn .front p {
     font-size: 14px;
   }
+}
+section .work a.btn .back p span, section .work a.btn .front p span {
+  margin-left: 3px;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+section .work a.btn .front {
+  background-color: #321f1f;
+  border-radius: 16px;
+  overflow: hidden;
+}
+section .work a.btn .front p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #321f1f;
+  font-weight: 700;
+  line-height: 2;
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  section .work a.btn .front p {
+    font-size: 14px;
+  }
+}
+section .work a.btn .front p span {
+  margin-left: 3px;
+  display: inline-block;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+section .work a.btn:hover span {
+  -webkit-transform: translateX(187%);
+      -ms-transform: translateX(187%);
+          transform: translateX(187%);
 }

@@ -14,6 +14,14 @@ a {
   display: block;
 }
 
+article.hide .wrapper, article.hide .contentBottom01, body article.hide .wrapper .content .contentBottom02, article.hide .contentBottom02 {
+  opacity: 0;
+}
+
+article.menuFixHeight .items {
+  opacity: 0;
+}
+
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e8edec), to(#c9c9c9));
   background-image: -o-linear-gradient(#e8edec, #c9c9c9);
@@ -22,6 +30,14 @@ body {
 body .hide {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
+}
+body article.hide .wrapper {
+  padding-bottom: 8%;
+}
+@media only screen and (max-width: 640px) {
+  body article.hide .wrapper {
+    padding-bottom: 30%;
+  }
 }
 body article {
   -webkit-transition: 0.5s ease-in-out;
@@ -131,12 +147,6 @@ body article .wrapper .content {
   border-radius: 5px;
   background-color: #EDEDED;
   padding: 8%;
-  margin-bottom: 12%;
-}
-@media only screen and (max-width: 640px) {
-  body article .wrapper .content {
-    margin-bottom: 30%;
-  }
 }
 body article .wrapper .content:before {
   content: "";
@@ -234,21 +244,7 @@ body article.menuFixHeight {
   position: fixed;
   bottom: 0;
   left: 0;
-  overflow: hidden;
   z-index: 99;
-}
-body article.menuFixHeight:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e8edec), to(#c9c9c9));
-  background-image: -o-linear-gradient(#e8edec, #c9c9c9);
-  background-image: linear-gradient(#e8edec, #c9c9c9);
-  opacity: 0;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
 body article.menuFixHeight .wrapper {
   position: absolute;
@@ -382,9 +378,6 @@ body.menuOpen article .bannerWrapper section.banner .main .menu {
 }
 body.menuOpen article .bannerWrapper section.banner .main .menu .wrapperMenu {
   opacity: 1;
-}
-body.menuOpen article.hide .wrapper {
-  display: none;
 }
 body.menuOpen article.menuFixHeight .wrapper {
   bottom: 50%;

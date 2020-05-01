@@ -12,13 +12,13 @@ function doAnimate(){
 	TweenMax.set('section.banner .bigCloud img', {y:400, opacity:0})
 
 	var tween1 = new TimelineMax()
-	.add(TweenMax.to('section.banner', 1, {opacity:1, delay:.5, ease: Power1.easeOut}))
-	.add(TweenMax.to('section.banner .grove img', 3, {y:0, opacity:1, delay:-.5, ease: Elastic.easeOut.config(1, 0.8)}))
-	.add(TweenMax.to('section.banner .mountainCableCar img', 3, {y:0, opacity:1, delay:-3, ease: Elastic.easeOut.config(1, 0.8)}))
-	.add(TweenMax.to('section.banner .one0one img', 3, {y:0, opacity:1, delay:-2.5, ease: Elastic.easeOut.config(1, 0.8)}))
-	.add(TweenMax.to('section.banner .mountainCow img', 3, {y:0, opacity:1, delay:-3, ease: Elastic.easeOut.config(1, 0.8)}))
-	.add(TweenMax.to('section.banner .buildings img', 3, {y:0, opacity:1, delay:-2.5, ease: Elastic.easeOut.config(1, 0.8)}))
-	.add(TweenMax.to('section.banner .bigCloud img', 3, {y:0, opacity:1, delay:-3, ease: Elastic.easeOut.config(1, 0.8)}))
+	.add(TweenMax.to('section.banner', 1, {opacity:1, delay:.5, ease:Power1.easeOut}))
+	.add(TweenMax.to('section.banner .grove img', 3, {y:0, opacity:1, delay:-.5, ease:Elastic.easeOut.config(1, 0.8)}))
+	.add(TweenMax.to('section.banner .mountainCableCar img', 3, {y:0, opacity:1, delay:-3, ease:Elastic.easeOut.config(1, 0.8)}))
+	.add(TweenMax.to('section.banner .one0one img', 3, {y:0, opacity:1, delay:-2.5, ease:Elastic.easeOut.config(1, 0.8)}))
+	.add(TweenMax.to('section.banner .mountainCow img', 3, {y:0, opacity:1, delay:-3, ease:Elastic.easeOut.config(1, 0.8)}))
+	.add(TweenMax.to('section.banner .buildings img', 3, {y:0, opacity:1, delay:-2.5, ease:Elastic.easeOut.config(1, 0.8)}))
+	.add(TweenMax.to('section.banner .bigCloud img', 3, {y:0, opacity:1, delay:-3, ease:Elastic.easeOut.config(1, 0.8)}))
 
 	// build scene
 	var scene1 = new ScrollMagic.Scene({

@@ -1,16 +1,23 @@
 @charset "utf-8"
 @import "var.sass"
 
+
+article.hide
+	.wrapper,.contentBottom01,.contentBottom02
+		opacity: 0
+article.menuFixHeight
+	.items
+		opacity: 0
 body
 	background-image: linear-gradient(#e8edec, #c9c9c9)
 	.hide
 		min-height: 100vh
 		min-height: calc(var(--vh, 1vh) * 100)
-	// article.hide
-	// 	.wrapper
-	// 		padding-bottom: 8%
-	// 		+rwd(640px)
-	// 			padding-bottom: 30%
+	article.hide
+		.wrapper
+			padding-bottom: 8%
+			+rwd(640px)
+				padding-bottom: 30%
 	article
 		transition: .5s ease-in-out
 		position: relative
@@ -56,9 +63,9 @@ body
 				border-radius: 5px
 				background-color: $floor
 				padding: 8%
-				margin-bottom: 12%
-				+rwd(640px)
-					margin-bottom: 30%
+				// margin-bottom: 12%
+				// +rwd(640px)
+				// 	margin-bottom: 30%
 				// box-sizing: border-box
 				// +rwd(768px)
 				// 	padding: 10%
@@ -131,15 +138,15 @@ body
 		position: fixed
 		bottom: 0
 		left: 0
-		overflow: hidden
+		// overflow: hidden
 		z-index: 99
 		// pointer-events: none
-		+before
-			width: 100%
-			height: 100%
-			background-image: linear-gradient(#e8edec, #c9c9c9)
-			opacity: 0
-			transition: .5s ease-in-out
+		// +before
+		// 	width: 100%
+		// 	height: 100%
+		// 	background-image: linear-gradient(#e8edec, #c9c9c9)
+		// 	opacity: 0
+		// 	transition: .5s ease-in-out
 		.wrapper
 			position: absolute
 			bottom: 25%
@@ -237,9 +244,9 @@ body.menuOpen
 						.wrapperMenu
 							opacity: 1
 	// 內頁
-	article.hide
-		.wrapper
-			display: none
+	// article.hide
+	// 	.wrapper
+	// 		display: none
 	article.menuFixHeight
 		.wrapper
 			bottom: 50%
