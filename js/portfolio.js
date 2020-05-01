@@ -38,6 +38,44 @@ function portfolioAnimate(){
 	// .addIndicators({ name: "2 (duration: 0)" }) // 指標顯示
 	.addTo(controller);
 	// part02 end--------------------------
+
+	// part03 start--------------------------
+	TweenMax.set('.bmw', {opacity:0})
+
+	var tween3 = new TimelineMax()
+	.add(TweenMax.to('.bmw', 1, {opacity:1}))
+
+	// build scene
+	var scene3 = new ScrollMagic.Scene({
+		triggerElement: ".bmw",
+		// duration: 100,
+		offset: 0, //指標位移
+		triggerHook: .6, // 觸發位置 0-1,onLeave,onCenter,onEnter
+		reverse: false, //動畫重複 default:true
+	})
+	.setTween(tween3)
+	// .addIndicators({ name: "3 (duration: 0)" }) // 指標顯示
+	.addTo(controller);
+	// part03 end--------------------------
+
+	// part04 start--------------------------
+	TweenMax.set('.fuco', {opacity:0})
+
+	var tween4 = new TimelineMax()
+	.add(TweenMax.to('.fuco', 1, {opacity:1}))
+
+	// build scene
+	var scene4 = new ScrollMagic.Scene({
+		triggerElement: ".fuco",
+		// duration: 100,
+		offset: 0, //指標位移
+		triggerHook: .6, // 觸發位置 0-1,onLeave,onCenter,onEnter
+		reverse: false, //動畫重複 default:true
+	})
+	.setTween(tween4)
+	// .addIndicators({ name: "4 (duration: 0)" }) // 指標顯示
+	.addTo(controller);
+	// part03 end--------------------------
 }
 
 $(document).ready(function () {
