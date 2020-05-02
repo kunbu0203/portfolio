@@ -5,7 +5,7 @@ function portfolioAnimate(){
 	TweenMax.set('.nonio', {opacity:0})
 
 	var tween1 = new TimelineMax()
-	.add(TweenMax.to('.nonio', 1, {opacity:1, delay:1}))
+	.add(TweenMax.to('.nonio', 1, {opacity:1}))
 
 	// build scene
 	var scene1 = new ScrollMagic.Scene({
@@ -28,10 +28,10 @@ function portfolioAnimate(){
 
 	// build scene
 	var scene2 = new ScrollMagic.Scene({
-		triggerElement: ".systema",
+		triggerElement: ".systema .front",
 		// duration: 100,
 		offset: 0, //指標位移
-		triggerHook: .6, // 觸發位置 0-1,onLeave,onCenter,onEnter
+		triggerHook: .9, // 觸發位置 0-1,onLeave,onCenter,onEnter
 		reverse: false, //動畫重複 default:true
 	})
 	.setTween(tween2)
@@ -47,10 +47,10 @@ function portfolioAnimate(){
 
 	// build scene
 	var scene3 = new ScrollMagic.Scene({
-		triggerElement: ".bmw",
+		triggerElement: ".bmw .front",
 		// duration: 100,
 		offset: 0, //指標位移
-		triggerHook: .6, // 觸發位置 0-1,onLeave,onCenter,onEnter
+		triggerHook: .9, // 觸發位置 0-1,onLeave,onCenter,onEnter
 		reverse: false, //動畫重複 default:true
 	})
 	.setTween(tween3)
@@ -66,10 +66,10 @@ function portfolioAnimate(){
 
 	// build scene
 	var scene4 = new ScrollMagic.Scene({
-		triggerElement: ".fuco",
+		triggerElement: ".fuco .front",
 		// duration: 100,
 		offset: 0, //指標位移
-		triggerHook: .6, // 觸發位置 0-1,onLeave,onCenter,onEnter
+		triggerHook: .9, // 觸發位置 0-1,onLeave,onCenter,onEnter
 		reverse: false, //動畫重複 default:true
 	})
 	.setTween(tween4)

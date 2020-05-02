@@ -6,7 +6,7 @@ function experienceAnimate(){
 	TweenMax.set('.arrowLine', {opacity:0})
 
 	var tween1 = new TimelineMax()
-	.add(TweenMax.to('section', 1, {opacity:1, delay:1}))
+	.add(TweenMax.to('section', 1, {opacity:1}))
 	.add(TweenMax.to('.arrowLine', .5, {opacity:1}))
 
 	// build scene

@@ -58,7 +58,7 @@ body article .wrapper {
     max-width: 1040px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body article .wrapper {
     width: 90%;
   }
