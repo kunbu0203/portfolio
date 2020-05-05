@@ -40,7 +40,7 @@ function aboutMeAnimate(){
 		reverse: false, //動畫重複 default:true
 	})
 	.setTween(tween2)
-	.addIndicators({ name: "2 (duration: 0)" }) // 指標顯示
+	// .addIndicators({ name: "2 (duration: 0)" }) // 指標顯示
 	.addTo(controller);
 	// part02 end--------------------------
 }
