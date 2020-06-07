@@ -144,7 +144,7 @@ section .work .txt p, section .work .txt li {
   font-size: 16px;
   line-height: 1.8;
   color: #321f1f;
-  font-weight: 700;
+  font-weight: 500;
 }
 @media only screen and (max-width: 768px) {
   section .work .txt p, section .work .txt li {
@@ -196,7 +196,7 @@ section .work a.btn .back p, section .work a.btn .front p {
   font-size: 16px;
   line-height: 1.8;
   color: #321f1f;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 2;
 }
 @media only screen and (max-width: 768px) {
@@ -220,7 +220,7 @@ section .work a.btn .front p {
   font-size: 16px;
   line-height: 1.8;
   color: #321f1f;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 2;
   color: #fff;
 }

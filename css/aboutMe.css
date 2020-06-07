@@ -81,19 +81,10 @@ section.information .dot:nth-of-type(4) {
   }
 }
 section.information .left, section.information .right {
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-@media only screen and (max-width: 1240px) {
-  section.information .left, section.information .right {
-    width: 100%;
-  }
+  width: 100%;
 }
 section.information .left {
-  padding-right: 3%;
+  padding-bottom: 30px;
   font-size: 0;
 }
 section.information .left h3 {
@@ -127,12 +118,6 @@ section.information .left h4 {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 1240px) {
-  section.information .left {
-    padding-right: 0;
-    padding-bottom: 15px;
-  }
-}
 @media only screen and (max-width: 640px) {
   section.information .left {
     text-align: center;
@@ -162,46 +147,32 @@ section.information .left .txt {
   }
 }
 section.information .center {
-  width: 5px;
-  height: 80%;
+  width: 100%;
+  height: 3px;
   border-radius: 2.5px;
   border: 2.5px solid #321f1f;
   background-color: #321f1f;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 @media only screen and (max-width: 1240px) {
   section.information .center {
-    width: 100%;
-    height: 3px;
     border: 1.5px solid #321f1f;
-    position: relative;
   }
 }
 section.information .right {
-  padding-left: 5%;
+  padding-top: 10px;
 }
 section.information .right p {
   font-size: 16px;
   line-height: 1.8;
   color: #321f1f;
-  font-weight: 700;
+  font-weight: 500;
+  padding-top: 15px;
 }
 @media only screen and (max-width: 768px) {
   section.information .right p {
     font-size: 14px;
-  }
-}
-@media only screen and (max-width: 1240px) {
-  section.information .right {
-    padding-left: 0;
-    padding-top: 15px;
   }
 }
 
@@ -274,8 +245,13 @@ section.skill h3 {
 .head .myHead {
   width: 16%;
   position: absolute;
-  bottom: 12%;
+  bottom: 8%;
   left: 0;
+}
+@media only screen and (max-width: 1240px) {
+  .head .myHead {
+    bottom: 7%;
+  }
 }
 @media only screen and (max-width: 1040px) {
   .head .myHead {
@@ -295,8 +271,13 @@ section.skill h3 {
 .head .myHat {
   width: 16%;
   position: absolute;
-  bottom: 12%;
+  bottom: 8%;
   right: 0;
+}
+@media only screen and (max-width: 1240px) {
+  .head .myHat {
+    bottom: 7%;
+  }
 }
 @media only screen and (max-width: 1040px) {
   .head .myHat {

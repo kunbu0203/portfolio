@@ -36,7 +36,7 @@ function aboutMeAnimate(){
 		triggerElement: "section.skill",
 		// duration: 100,
 		offset: 0, //指標位移
-		triggerHook: .5, // 觸發位置 0-1,onLeave,onCenter,onEnter
+		triggerHook: .6, // 觸發位置 0-1,onLeave,onCenter,onEnter
 		reverse: false, //動畫重複 default:true
 	})
 	.setTween(tween2)

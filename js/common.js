@@ -136,8 +136,5 @@ $(document).ready(function () {
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
 
-    // var div = document.getElementById('test');
-    // console.log(div.clientHeight);
-    // $('.menuFixHeight .wrapper').css('margin-top', 'div');
     commonAnimate();
 });
